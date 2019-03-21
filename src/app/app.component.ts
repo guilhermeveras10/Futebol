@@ -34,6 +34,7 @@ export class MyApp {
   rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
+  pagesTorcedor: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -53,7 +54,10 @@ export class MyApp {
       { title: 'Redes Sociais', component: RedesSociaisPage },
       { title: 'Loja virtual', component: LojaVirtualPage },
       { title: 'Compra de Ingressos', component: CompraDeIngressosPage },
-      { title: 'Seja Sócio', component: SejaSocioPage },
+      { title: 'Seja Sócio', component: SejaSocioPage }
+    ];
+
+    this.pagesTorcedor = [
       { title: 'Ajude o Clube', component: AjudeOClubePage },
       { title: 'Extrato de arrecadação', component: ExtratoDaArrecadacaoPage },
       { title: 'Programa de Pontos', component: ProgramaDePontosPage },
@@ -75,5 +79,9 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+  
+  logout() {
+    
   }
 }

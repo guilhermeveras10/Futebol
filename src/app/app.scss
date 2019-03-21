@@ -14,3 +14,23 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.list {
+    background-image: url('../../assets/imgs/fundo.png'); 
+} 
+.menu {
+    background-color: transparent;
+    color: white;
+    padding-left: 40px;
+}
+.h5 {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+}
+.config {
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
