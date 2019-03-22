@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
+import { NoticiaProvider } from '../../providers/noticia/noticia';
 
 /**
  * Generated class for the NoticiasPage page.
@@ -14,12 +17,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'noticias.html',
 })
 export class NoticiasPage {
+  
+  public noticias: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public noticiaProvider: NoticiaProvider) {
+    noticiaProvider.getNoticia().subscribe(snapshot => {
+      this.noticias = snapshot.reverse();
+      console.log(this.noticias);
+    });
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NoticiasPage');
   }
-
 }

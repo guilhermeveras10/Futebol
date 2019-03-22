@@ -6,13 +6,29 @@
     <ion-title>Notícias</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let noticia of noticias" col-12>
+        <ion-card *ngIf="noticia.destaque == 'Sim'">
+          <ion-card-header>
+            {{noticia.nome}}
+          </ion-card-header>
+          <ion-card-content class="fixline">
+            {{noticia.descricao}}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col *ngFor="let noticia of noticias" col-5>
+          <ion-card *ngIf="noticia.destaque == 'Não'">
+            <ion-card-header>
+              {{noticia.nome}}
+            </ion-card-header>
+            <ion-card-content class="fixline">
+              {{noticia.descricao}}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -39,6 +39,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 // Import moment module
 import { MomentModule } from 'angular2-moment';
+import { NoticiaProvider } from '../providers/noticia/noticia';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -114,7 +115,8 @@ export const firebaseConfig = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UserProvider
+    UserProvider,
+    NoticiaProvider
   ]
 })
 export class AppModule {}

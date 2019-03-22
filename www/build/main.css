@@ -30582,3 +30582,8 @@ page-login ion-input {
 page-login .h6 {
   color: white;
 }
+
+page-noticias .fixline {
+  height: 60px;
+  margin-bottom: 7px;
+}
