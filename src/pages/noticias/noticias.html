@@ -13,11 +13,12 @@
         <ion-card *ngIf="noticia.destaque == 'Sim'">
           <img src="{{noticia.url}}" style="width:350px;height:200px;" />
           <div class="card-title">{{noticia.nome}}</div>
-          <div class="card-subtitle">{{noticia.descricao}}</div>
+          <div class="card-subtitle">{{ noticia.timestamp | date: 'dd.MM.yyyy'}}</div>
         </ion-card>
       </ion-col>
-      <ion-col *ngFor="let noticia of noticias" col-5>
-        <ion-card *ngIf="noticia.destaque == 'Não'">
+      <ion-col *ngFor="let noticia of noticias" col-5 >
+        <ion-card *ngIf="noticia.destaque == 'Não'" class="col6">
+            <img src="{{noticia.url}}" style="width:200px;height:70px;" />
           <ion-card-header>
             {{noticia.nome}}
           </ion-card-header>
