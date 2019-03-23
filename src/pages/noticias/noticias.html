@@ -19,12 +19,8 @@
       <ion-col *ngFor="let noticia of noticias" col-5 >
         <ion-card *ngIf="noticia.destaque == 'Não'" class="col6">
             <img src="{{noticia.url}}" style="width:200px;height:70px;" />
-          <ion-card-header>
-            {{noticia.nome}}
-          </ion-card-header>
-          <ion-card-content class="fixline">
-            {{noticia.descricao}}
-          </ion-card-content>
+          <div class="fixline">{{noticia.nome}}</div>
+          <div class="fixline2">{{ noticia.timestamp | date: 'dd.MM.yyyy'}}</div>
         </ion-card>
       </ion-col>
     </ion-row>
