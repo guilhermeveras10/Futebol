@@ -8,11 +8,16 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-card *ngFor="let jogo of jogos">
+            <div class="data" style="text-align:center">{{jogo.dataDoJogo}}</div>
+            <div class="nomeDoMeuTime">{{jogo.nomeDoTime}}</div>
+            <img class="meuescudo" src="{{jogo.meuescudo}}" style="width:20px;height:25px;" />
+            <div class="minhaQuantidadeDeGols">{{jogo.suaQuantidadeDeGols}} X {{jogo.quantidadeDeGolsDoOponente}}</div>
+            <img class="escudoOponente" src="{{jogo.escudooponente}}" style="width: 20px;height: 25px;" />
+            <div class="nomeDoOponente">{{jogo.nomeDoOponente}}</div>
+          </ion-card>
+        </ion-row>
+      </ion-grid>
+    </ion-content>

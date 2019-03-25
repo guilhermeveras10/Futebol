@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
+import { NoticiaProvider } from '../../providers/noticia/noticia';
+import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media';
 
 /**
  * Generated class for the VideosPage page.
@@ -14,12 +17,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'videos.html',
 })
 export class VideosPage {
+  
+  public videos: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public noticiaProvider: NoticiaProvider, private streamingMedia: StreamingMedia) {
+    noticiaProvider.getVideo().subscribe(snapshot => {
+      this.videos = snapshot.reverse();
+      console.log(this.videos);
+    });
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad VideosPage');
+  startVideo(url) {
+    let options: StreamingVideoOptions = {
+      successCallback: () => {console.log()},
+      errorCallback: () => {console.log()},
+      orientation: 'portrait'
+    }
+    this.streamingMedia.playVideo(url, options);
   }
-
 }

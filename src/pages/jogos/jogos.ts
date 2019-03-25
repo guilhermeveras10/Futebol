@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
+import { JogodProvider } from '../../providers/jogod/jogod';
 
 /**
  * Generated class for the JogosPage page.
@@ -15,11 +17,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class JogosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  public jogos: any;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad JogosPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public jogoProvider: JogodProvider) {
+    jogoProvider.getJogo().subscribe(snapshot => {
+      this.jogos = snapshot.reverse();
+      console.log(this.jogos);
+    });
   }
+  
 
 }

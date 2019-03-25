@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
 import { NoticiaProvider } from '../../providers/noticia/noticia';
 
 /**
@@ -28,7 +27,4 @@ export class NoticiasPage {
   }
   
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad NoticiasPage');
-  }
 }

@@ -37,9 +37,11 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
+import { StreamingMedia } from '@ionic-native/streaming-media';
 // Import moment module
 import { MomentModule } from 'angular2-moment';
 import { NoticiaProvider } from '../providers/noticia/noticia';
+import { JogodProvider } from '../providers/jogod/jogod';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -115,8 +117,10 @@ export const firebaseConfig = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    StreamingMedia,
     UserProvider,
-    NoticiaProvider
+    NoticiaProvider,
+    JogodProvider
   ]
 })
 export class AppModule {}

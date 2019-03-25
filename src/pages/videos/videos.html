@@ -6,13 +6,13 @@
     <ion-title>Vídeos</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-grid>
+    <ion-row>
+      <ion-card *ngFor="let video of videos">
+        <div class="card-title">{{video.titulo}}</div>
+        <img src="{{video.miniatura}}" style="width:350px;height:200px;" (click)="startVideo(video.url)" />
+      </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -30570,6 +30570,67 @@ page-cadastro .button {
   color: white;
 }
 
+page-jogos ion-card {
+  position: relative;
+  top: -15%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  height: 70px;
+}
+
+page-jogos .data {
+  position: absolute;
+  font-size: 0.7em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  top: 10%;
+}
+
+page-jogos .nomeDoMeuTime {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  font-size: 0.8em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-jogos .meuescudo {
+  position: absolute;
+  left: 36%;
+  top: 25%;
+}
+
+page-jogos .minhaQuantidadeDeGols {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: black;
+  background-color: #ebebeb;
+}
+
+page-jogos .escudoOponente {
+  position: absolute;
+  left: 58%;
+  top: 25%;
+}
+
+page-jogos .nomeDoOponente {
+  position: absolute;
+  left: 66%;
+  top: 40%;
+  font-size: 0.8em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
 page-login ion-content {
   background-image: url("../../assets/imgs/fundo.png");
 }
@@ -30639,4 +30700,25 @@ page-noticias .fixline2 {
   right: -50%;
   width: 100%;
   color: #535353;
+}
+
+page-videos ion-card {
+  position: relative;
+  top: -15%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+}
+
+page-videos ion-card img {
+  width: 100%;
+}
+
+page-videos .card-title {
+  left: 4%;
+  font-size: 1.0em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
 }
