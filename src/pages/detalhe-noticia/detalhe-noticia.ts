@@ -15,7 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetalheNoticiaPage {
 
+  noticia: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.noticia = this.navParams.data.noticia || {};
   }
 
   ionViewDidLoad() {

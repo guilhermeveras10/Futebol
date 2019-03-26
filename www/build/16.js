@@ -1,14 +1,14 @@
 webpackJsonp([16],{
 
-/***/ 499:
+/***/ 501:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompraDeIngressosPageModule", function() { return CompraDeIngressosPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatDaTorcidaPageModule", function() { return ChatDaTorcidaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compra_de_ingressos__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_da_torcida__ = __webpack_require__(124);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CompraDeIngressosPageModule = (function () {
-    function CompraDeIngressosPageModule() {
+var ChatDaTorcidaPageModule = (function () {
+    function ChatDaTorcidaPageModule() {
     }
-    CompraDeIngressosPageModule = __decorate([
+    ChatDaTorcidaPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__compra_de_ingressos__["a" /* CompraDeIngressosPage */],
+                __WEBPACK_IMPORTED_MODULE_2__chat_da_torcida__["a" /* ChatDaTorcidaPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__compra_de_ingressos__["a" /* CompraDeIngressosPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__chat_da_torcida__["a" /* ChatDaTorcidaPage */]),
             ],
         })
-    ], CompraDeIngressosPageModule);
-    return CompraDeIngressosPageModule;
+    ], ChatDaTorcidaPageModule);
+    return ChatDaTorcidaPageModule;
 }());
 
-//# sourceMappingURL=compra-de-ingressos.module.js.map
+//# sourceMappingURL=chat-da-torcida.module.js.map
 
 /***/ })
 

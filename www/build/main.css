@@ -30570,6 +30570,57 @@ page-cadastro .button {
   color: white;
 }
 
+page-detalhe-noticia .img {
+  width: 100%;
+}
+
+page-detalhe-noticia .logo {
+  position: absolute;
+  top: 36.5%;
+  left: 4.5%;
+}
+
+page-detalhe-noticia .nome {
+  position: absolute;
+  top: 37%;
+  left: 14%;
+  font-size: 1.0em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-detalhe-noticia .fixline {
+  position: absolute;
+  top: 46%;
+  left: 14%;
+  height: 60px;
+  font-size: 2.0em;
+  width: 80%;
+  font-weight: bold;
+  color: black;
+}
+
+page-detalhe-noticia .fixline3 {
+  position: absolute;
+  top: 78%;
+  left: 14%;
+  height: 60px;
+  font-size: 1.0em;
+  width: 78%;
+  color: black;
+}
+
+page-detalhe-noticia .fixline2 {
+  font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 16%;
+  width: 100%;
+  color: #535353;
+}
+
 page-jogos ion-card {
   position: relative;
   top: -15%;

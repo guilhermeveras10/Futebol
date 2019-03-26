@@ -9,16 +9,16 @@
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <ion-col *ngFor="let noticia of noticias" col-12>
+      <ion-col *ngFor="let noticia of noticias" col-12 (click)="detalhe(noticia)">
         <ion-card *ngIf="noticia.destaque == 'Sim'">
-          <img src="{{noticia.url}}" style="width:350px;height:200px;" />
+          <img src="{{noticia.url}}" style="height:200px;" />
           <div class="card-title">{{noticia.nome}}</div>
           <div class="card-subtitle">{{ noticia.timestamp | date: 'dd.MM.yyyy'}}</div>
         </ion-card>
       </ion-col>
-      <ion-col *ngFor="let noticia of noticias" col-5 >
+      <ion-col *ngFor="let noticia of noticias" col-5 (click)="detalhe(noticia)">
         <ion-card *ngIf="noticia.destaque == 'Não'" class="col6">
-            <img src="{{noticia.url}}" style="width:200px;height:70px;" />
+            <img src="{{noticia.url}}" style="height:70px;" />
           <div class="fixline">{{noticia.nome}}</div>
           <div class="fixline2">{{ noticia.timestamp | date: 'dd.MM.yyyy'}}</div>
         </ion-card>

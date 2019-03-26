@@ -25,6 +25,8 @@ export class NoticiasPage {
       console.log(this.noticias);
     });
   }
-  
+  detalhe(noticia: any) {
+    this.navCtrl.push('DetalheNoticiaPage', { noticia: noticia });
+  }
 
 }

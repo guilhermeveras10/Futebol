@@ -21,9 +21,10 @@ import { AjudeOClubePage } from '../pages/ajude-o-clube/ajude-o-clube';
 import { ExtratoDaArrecadacaoPage } from '../pages/extrato-da-arrecadacao/extrato-da-arrecadacao';
 import { ProgramaDePontosPage } from '../pages/programa-de-pontos/programa-de-pontos';
 import { CronogramaDeSorteiosPage } from '../pages/cronograma-de-sorteios/cronograma-de-sorteios';
-
-import { CadastroPage } from '../pages/cadastro/cadastro';
+import { AngularFireAuth } from "angularfire2/auth/auth";
 import { LoginPage } from '../pages/login/login';
+
+import { UserProvider } from '../providers/user/user';
 
 @Component({
   templateUrl: 'app.html'
@@ -31,12 +32,13 @@ import { LoginPage } from '../pages/login/login';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = JogosPage;
+  rootPage: any;
+  user = {};
 
   pages: Array<{title: string, component: any}>;
   pagesTorcedor: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private authProvider: UserProvider, public afAuth: AngularFireAuth) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -72,6 +74,21 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      // check for login stage, then redirect
+      this.afAuth.authState.take(1).subscribe(authData => {
+        if (authData) {
+          this.nav.setRoot(NoticiasPage);
+        } else {
+          this.nav.setRoot(LoginPage);
+        }
+      });
+
+      // get user data
+      this.afAuth.authState.subscribe(authData => {
+        if (authData) {
+          this.user = this.authProvider.getUserData();
+        }
+      });
     });
   }
 
@@ -82,6 +99,7 @@ export class MyApp {
   }
   
   logout() {
-    
+    this.authProvider.logout();
+    this.nav.setRoot('LoginPage');
   }
 }

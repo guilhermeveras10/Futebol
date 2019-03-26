@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>detalheNoticia</ion-title>
+  <ion-navbar color="vermelhoEscuro">
+    <ion-title>Notícia</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,11 @@
 
 <ion-content padding>
 
+  <img src="{{noticia.url}}" style="height:200px;" class="img"/>
+  <img src="../../assets/imgs/logo.png" style="width:30px;height: 34px;" class="logo">
+  <div class="nome">Joinville</div>
+  <div class="fixline2">{{ noticia.timestamp | date: 'dd.MM.yyyy'}}</div>
+  <div class="fixline">{{noticia.nome}}</div>
+
+  <div class="fixline3">{{noticia.descricao}}</div>
 </ion-content>

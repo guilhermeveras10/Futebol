@@ -26,6 +26,8 @@ import { ProgramaDePontosPage } from '../pages/programa-de-pontos/programa-de-po
 import { CronogramaDeSorteiosPage } from '../pages/cronograma-de-sorteios/cronograma-de-sorteios';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
+import { DetalheNoticiaPage } from '../pages/detalhe-noticia/detalhe-noticia';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -42,6 +44,8 @@ import { StreamingMedia } from '@ionic-native/streaming-media';
 import { MomentModule } from 'angular2-moment';
 import { NoticiaProvider } from '../providers/noticia/noticia';
 import { JogodProvider } from '../providers/jogod/jogod';
+import { DetalheNoticiaPageModule } from '../pages/detalhe-noticia/detalhe-noticia.module';
+import { LoginPageModule } from '../pages/login/login.module';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -74,8 +78,7 @@ export const firebaseConfig = {
     ExtratoDaArrecadacaoPage,
     ProgramaDePontosPage,
     CronogramaDeSorteiosPage,
-    CadastroPage,
-    LoginPage
+    CadastroPage
   ],
   imports: [
     BrowserModule,
@@ -87,6 +90,8 @@ export const firebaseConfig = {
     AngularFireAuthModule,
     MomentModule,
     IonicModule.forRoot(MyApp),
+    DetalheNoticiaPageModule,
+    LoginPageModule,
     IonMaskModule.forRoot()
   ],
   bootstrap: [IonicApp],
@@ -111,7 +116,8 @@ export const firebaseConfig = {
     ProgramaDePontosPage,
     CronogramaDeSorteiosPage,
     CadastroPage,
-    LoginPage
+    LoginPage,
+    DetalheNoticiaPage
   ],
   providers: [
     StatusBar,
