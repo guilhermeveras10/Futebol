@@ -13,14 +13,19 @@ import 'rxjs/add/operator/take';
 export class UserProvider {
 
   user: any;
-  constructor(public afAuth: AngularFireAuth, public db: AngularFireDatabase, ) { }
+  constructor(public afAuth: AngularFireAuth, public db: AngularFireDatabase, ) {
+    this.user = this.getUserData();
+  }
+  setUser(user) {
+    this.user = user;
+  }
 
   getUserData() { // get current user data from firebase
     return this.afAuth.auth.currentUser;
   }
-
-  getUser(id) { // get driver by id
-    return this.db.object('drivers/' + id);
+  getTorcedor() {
+    let user = this.getUserData();
+    return this.db.object('torcedores/' + user.uid);
   }
 
   login(cpf, password) {

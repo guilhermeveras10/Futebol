@@ -31,15 +31,46 @@ import { UserProvider } from '../providers/user/user';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
+  torcedor: any;
   rootPage: any;
   user = {};
 
-  pages: Array<{title: string, component: any}>;
-  pagesTorcedor: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
+  pagesTorcedor: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private authProvider: UserProvider, public afAuth: AngularFireAuth) {
-    this.initializeApp();
+ 
+    platform.ready().then(() => {
+      // Okay, so the platform is ready and our plugins are available.
+      // Here you can do any higher level native things you might need.
+      statusBar.styleDefault();
+      splashScreen.hide();
+
+      // check for login stage, then redirect
+      afAuth.authState.take(1).subscribe(authData => {
+        if (authData) {
+          this.nav.setRoot(NoticiasPage);
+        } else {
+          this.nav.setRoot(LoginPage);
+        }
+      });
+
+      // get user data
+      afAuth.authState.subscribe(authData => {
+        console.log(authData);
+        if (authData) {
+          this.user = authProvider.getUserData();
+
+          // get user info from service
+          authProvider.setUser(this.user);
+          authProvider.getTorcedor().subscribe(snapshot => {
+            this.torcedor = snapshot;
+          });
+        } else {
+          this.torcedor = null;
+        }
+      });
+    });
 
     // used for an example of ngFor and navigation
     this.pages = [
@@ -67,37 +98,18 @@ export class MyApp {
     ];
 
   }
-
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-      // check for login stage, then redirect
-      this.afAuth.authState.take(1).subscribe(authData => {
-        if (authData) {
-          this.nav.setRoot(NoticiasPage);
-        } else {
-          this.nav.setRoot(LoginPage);
-        }
-      });
-
-      // get user data
-      this.afAuth.authState.subscribe(authData => {
-        if (authData) {
-          this.user = this.authProvider.getUserData();
-        }
-      });
-    });
-  }
-
+  // ionViewDidLoad(){
+  //   this.authProvider.getTorcedor().take(1).subscribe(snapshot => {
+  //     this.torcedor = snapshot;
+  //   });
+  // }
+  
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
-  
+
   logout() {
     this.authProvider.logout();
     this.nav.setRoot('LoginPage');
