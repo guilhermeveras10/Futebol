@@ -20,6 +20,11 @@ export class UserProvider {
     this.user = user;
   }
 
+  // get passenger by id
+  getUser(id) {
+    return this.db.object('torcedores/' + id);
+  }
+  
   getUserData() { // get current user data from firebase
     return this.afAuth.auth.currentUser;
   }

@@ -23,6 +23,7 @@ import { ProgramaDePontosPage } from '../pages/programa-de-pontos/programa-de-po
 import { CronogramaDeSorteiosPage } from '../pages/cronograma-de-sorteios/cronograma-de-sorteios';
 import { AngularFireAuth } from "angularfire2/auth/auth";
 import { LoginPage } from '../pages/login/login';
+import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 
 import { UserProvider } from '../providers/user/user';
 
@@ -98,12 +99,6 @@ export class MyApp {
     ];
 
   }
-  // ionViewDidLoad(){
-  //   this.authProvider.getTorcedor().take(1).subscribe(snapshot => {
-  //     this.torcedor = snapshot;
-  //   });
-  // }
-  
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
@@ -113,5 +108,11 @@ export class MyApp {
   logout() {
     this.authProvider.logout();
     this.nav.setRoot('LoginPage');
+  }
+
+  config() {
+    this.nav.setRoot(ConfiguracoesPage, {
+      user: this.user
+    });
   }
 }

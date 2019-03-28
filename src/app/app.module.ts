@@ -27,7 +27,7 @@ import { CronogramaDeSorteiosPage } from '../pages/cronograma-de-sorteios/cronog
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
 import { DetalheNoticiaPage } from '../pages/detalhe-noticia/detalhe-noticia';
-
+import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -46,6 +46,7 @@ import { NoticiaProvider } from '../providers/noticia/noticia';
 import { JogodProvider } from '../providers/jogod/jogod';
 import { DetalheNoticiaPageModule } from '../pages/detalhe-noticia/detalhe-noticia.module';
 import { LoginPageModule } from '../pages/login/login.module';
+import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -91,6 +92,7 @@ export const firebaseConfig = {
     MomentModule,
     IonicModule.forRoot(MyApp),
     DetalheNoticiaPageModule,
+    ConfiguracoesPageModule,
     LoginPageModule,
     IonMaskModule.forRoot()
   ],
@@ -117,7 +119,8 @@ export const firebaseConfig = {
     CronogramaDeSorteiosPage,
     CadastroPage,
     LoginPage,
-    DetalheNoticiaPage
+    DetalheNoticiaPage,
+    ConfiguracoesPage
   ],
   providers: [
     StatusBar,

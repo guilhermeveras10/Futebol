@@ -30570,6 +30570,23 @@ page-cadastro .button {
   color: white;
 }
 
+page-configuracoes ion-content {
+  background-image: url("../../assets/imgs/fundo.png");
+}
+
+page-configuracoes ion-input {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+}
+
+page-configuracoes .h6 {
+  color: white;
+}
+
+page-configuracoes .button {
+  color: white;
+}
+
 page-detalhe-noticia .img {
   width: 100%;
 }
