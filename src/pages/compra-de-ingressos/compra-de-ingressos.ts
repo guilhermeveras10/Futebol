@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
+import { JogodProvider } from '../../providers/jogod/jogod';
 
 /**
- * Generated class for the CompraDeIngressosPage page.
+ * Generated class for the NoticiasPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -14,12 +16,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'compra-de-ingressos.html',
 })
 export class CompraDeIngressosPage {
+  
+  public ingressos: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public ingressosProvider: JogodProvider) {
+    ingressosProvider.getJogo().subscribe(snapshot => {
+      this.ingressos = snapshot.reverse();
+    });
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CompraDeIngressosPage');
-  }
-
 }
+
+

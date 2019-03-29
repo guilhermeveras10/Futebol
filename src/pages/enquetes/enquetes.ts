@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
+import { EnqueteProvider } from '../../providers/enquete/enquete';
 
 /**
- * Generated class for the EnquetesPage page.
+ * Generated class for the NoticiasPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -14,12 +16,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'enquetes.html',
 })
 export class EnquetesPage {
+  
+  public enquetes: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public enquetesProvider: EnqueteProvider) {
+    enquetesProvider.getEnquete().subscribe(snapshot => {
+      this.enquetes = snapshot.reverse();
+    });
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EnquetesPage');
-  }
-
 }
+
+

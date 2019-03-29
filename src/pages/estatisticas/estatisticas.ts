@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
+import { JogadoresProvider } from '../../providers/jogadores/jogadores';
 
 /**
- * Generated class for the EstatisticasPage page.
+ * Generated class for the NoticiasPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -14,12 +16,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'estatisticas.html',
 })
 export class EstatisticasPage {
+  
+  public jogadores: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public jogadoresProvider: JogadoresProvider) {
+    jogadoresProvider.getArtilheiro().subscribe(snapshot => {
+      this.jogadores = snapshot.reverse();
+    });
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EstatisticasPage');
-  }
-
 }
+
+

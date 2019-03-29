@@ -14,8 +14,6 @@ export class SocioProvider {
   }
 
   getJogo() {
-    let user = this.authService.getUserData();
-    console.log(user);
     return this.db.list('jogos');
   }
 }
