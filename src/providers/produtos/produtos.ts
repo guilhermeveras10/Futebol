@@ -1,17 +1,25 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
+import { AngularFireDatabase } from "angularfire2/database/database";
+import { UserProvider } from "../../providers/user/user";
 
 /*
-  Generated class for the ProdutosProvider provider.
+  Generated class for the EnqueteProvider provider.
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
 @Injectable()
 export class ProdutosProvider {
-
-  constructor(public http: HttpClient) {
-    console.log('Hello ProdutosProvider Provider');
+  constructor(public db: AngularFireDatabase, public authService: UserProvider) {
   }
 
+  getProdutosLoja() {
+    return this.db.list('produtosLoja');
+  }
+  getProdutosPontos() {
+    return this.db.list('produtosPontos');
+  }
+  getSorteios() {
+    return this.db.list('sorteios');
+  }
 }

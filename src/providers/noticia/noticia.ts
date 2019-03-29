@@ -17,8 +17,6 @@ export class NoticiaProvider {
     return this.db.list('noticias');
   }
   getVideo() {
-    let user = this.authService.getUserData();
-    console.log(user);
     return this.db.list('videos');
   }
 }

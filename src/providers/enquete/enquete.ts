@@ -1,5 +1,7 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+
+import { Injectable } from "@angular/core";
+import { AngularFireDatabase } from "angularfire2/database/database";
+import { UserProvider } from "../../providers/user/user";
 
 /*
   Generated class for the EnqueteProvider provider.
@@ -9,9 +11,10 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class EnqueteProvider {
-
-  constructor(public http: HttpClient) {
-    console.log('Hello EnqueteProvider Provider');
+  constructor(public db: AngularFireDatabase, public authService: UserProvider) {
   }
 
+  getEnquete() {
+    return this.db.list('enquetes');
+  }
 }
