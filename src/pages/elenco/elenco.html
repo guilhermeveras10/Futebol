@@ -6,13 +6,17 @@
     <ion-title>Elenco</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let jogador of jogadores" col-5 (click)="detalhe(noticia)">
+        <ion-card class="col6">
+          <img src="{{jogador.url}}" style="height:70px;" />
+          <div class="fixline">{{jogador.nome}}</div>
+          <div class="fixline">{{jogador.nome}}</div>
+          <div class="fixline">{{jogador.nome}}</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
