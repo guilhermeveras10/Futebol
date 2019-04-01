@@ -30553,6 +30553,10 @@ ion-navbar.toolbar {
   top: 10px;
 }
 
+page-ajude-o-clube ion-content {
+  background-image: url("../../assets/imgs/fundo.png");
+}
+
 page-cadastro ion-content {
   background-image: url("../../assets/imgs/fundo.png");
 }
@@ -30568,6 +30572,10 @@ page-cadastro .h6 {
 
 page-cadastro .button {
   color: white;
+}
+
+page-chat-da-torcida ion-content {
+  background-image: url("../../assets/imgs/fundo.png");
 }
 
 page-configuracoes ion-content {
@@ -30903,6 +30911,10 @@ page-noticias .fixline2 {
   right: -50%;
   width: 100%;
   color: #535353;
+}
+
+page-redes-sociais ion-content {
+  background-image: url("../../assets/imgs/fundo.png");
 }
 
 page-tabelas .artilheiros {
