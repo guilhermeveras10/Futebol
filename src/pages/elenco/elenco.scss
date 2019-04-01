@@ -1,10 +1,27 @@
 page-elenco {
-    .fixline {
-        height: 60px;
-        margin-bottom: 7px;
-        top: 70%;
-        left: 4%;
-        font-size: 1.0em;
+      .nome {
+        position: absolute;
+        top: 10%;
+        left: 54%;
+        font-size: 0.5em;
+        width: 100%;
+        font-weight: bold;
+        color: rgb(77, 77, 77);
+       }
+       .sobrenome {
+        position: absolute;
+        top: 18%;
+        left: 54%;
+        font-size: 0.7em;
+        width: 100%;
+        font-weight: bold;
+        color: rgb(77, 77, 77);
+       }
+       .posicao {
+        position: absolute;
+        top: 28%;
+        left: 54%;
+        font-size: 0.7em;
         width: 100%;
         font-weight: bold;
         color: rgb(77, 77, 77);
@@ -12,18 +29,19 @@ page-elenco {
    
        ion-card {
          position: relative;
-         top: -15%;
+         top: -4%;
          margin-left:0 !important;
          margin-right:0 !important;
          margin-top:0 !important;
          width:100% !important;
            img{
-               width:100%;
+               width:50%;
+               height: 100%;
            }
        }
    
        .col6 {
-         background-color: #f1f1f1;
+         background-color: transparent;
        }
          
        .card-title {

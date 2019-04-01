@@ -31,7 +31,6 @@ import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { UserProvider } from '../providers/user/user';
 // Import your library
 import { IonMaskModule } from '@pluritech/ion-mask';
 // Import the AF2 Module
@@ -42,11 +41,15 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { StreamingMedia } from '@ionic-native/streaming-media';
 // Import moment module
 import { MomentModule } from 'angular2-moment';
-import { NoticiaProvider } from '../providers/noticia/noticia';
-import { JogodProvider } from '../providers/jogod/jogod';
 import { DetalheNoticiaPageModule } from '../pages/detalhe-noticia/detalhe-noticia.module';
 import { LoginPageModule } from '../pages/login/login.module';
 import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
+// import providers
+import { UserProvider } from '../providers/user/user';
+import { JogadoresProvider } from '../providers/jogadores/jogadores';
+import { NoticiaProvider } from '../providers/noticia/noticia';
+import { JogodProvider } from '../providers/jogod/jogod';
+import { TimesProvider } from '../providers/times/times';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -129,6 +132,8 @@ export const firebaseConfig = {
     StreamingMedia,
     UserProvider,
     NoticiaProvider,
+    JogadoresProvider,
+    TimesProvider,
     JogodProvider
   ]
 })

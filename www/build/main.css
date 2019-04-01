@@ -30638,6 +30638,84 @@ page-detalhe-noticia .fixline2 {
   color: #535353;
 }
 
+page-elenco .nome {
+  position: absolute;
+  top: 10%;
+  left: 54%;
+  font-size: 0.5em;
+  width: 100%;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+page-elenco .sobrenome {
+  position: absolute;
+  top: 18%;
+  left: 54%;
+  font-size: 0.7em;
+  width: 100%;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+page-elenco .posicao {
+  position: absolute;
+  top: 28%;
+  left: 54%;
+  font-size: 0.7em;
+  width: 100%;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+page-elenco ion-card {
+  position: relative;
+  top: -4%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+}
+
+page-elenco ion-card img {
+  width: 50%;
+  height: 100%;
+}
+
+page-elenco .col6 {
+  background-color: transparent;
+}
+
+page-elenco .card-title {
+  position: absolute;
+  top: 70%;
+  left: 4%;
+  font-size: 1.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+
+page-elenco .card-subtitle {
+  font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  top: 90%;
+  right: -80%;
+  width: 100%;
+  color: whitesmoke;
+}
+
+page-elenco .fixline2 {
+  font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  top: 90%;
+  right: -50%;
+  width: 100%;
+  color: #535353;
+}
+
 page-jogos ion-card {
   position: relative;
   top: -15%;

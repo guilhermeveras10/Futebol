@@ -11,10 +11,14 @@
     <ion-row>
       <ion-col *ngFor="let jogador of jogadores" col-5 (click)="detalhe(noticia)">
         <ion-card class="col6">
-          <img src="{{jogador.url}}" style="height:70px;" />
-          <div class="fixline">{{jogador.nome}}</div>
-          <div class="fixline">{{jogador.nome}}</div>
-          <div class="fixline">{{jogador.nome}}</div>
+          <img src="{{jogador.url}}" />
+          <div class="nome">{{jogador.nome}}</div>
+          <div class="sobrenome">{{jogador.sobrenome}}</div>
+          <div class="posicao">{{jogador.posicao}}</div>
+          <!--<div class="fixline">{{jogador.nascimento}}</div>
+          <div class="fixline">{{jogador.localdenascimento}}</div>
+          <div class="fixline">{{jogador.idade}}</div>
+          <div class="fixline">{{jogador.nacionalidadee}}</div> -->
         </ion-card>
       </ion-col>
     </ion-row>
