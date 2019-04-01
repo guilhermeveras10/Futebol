@@ -19,11 +19,38 @@ page-elenco {
        }
        .posicao {
         position: absolute;
-        top: 28%;
+        top: 32%;
         left: 54%;
-        font-size: 0.7em;
+        font-size: 0.6em;
         width: 100%;
-        font-weight: bold;
+        font-weight: 100 ;
+        color: rgb(77, 77, 77);
+       }
+       .de {
+        position: absolute;
+        top: 60%;
+        left: 54%;
+        font-size: 0.5em;
+        width: 100%;
+        font-weight: bold; 
+        color: rgb(77, 77, 77);
+       }
+       .nascimento {
+        position: absolute;
+        top: 50%;
+        left: 54%;
+        font-size: 0.5em;
+        width: 100%;
+        font-weight: 100 ;
+        color: rgb(77, 77, 77);
+       }
+       .nacionalidade {
+        position: absolute;
+        top: 68%;
+        left: 54%;
+        font-size: 0.5em;
+        width: 100%;
+        font-weight: bold; 
         color: rgb(77, 77, 77);
        }
    
@@ -44,34 +71,4 @@ page-elenco {
          background-color: transparent;
        }
          
-       .card-title {
-         position: absolute;
-         top: 70%;
-         left: 4%;
-         font-size: 1.0em;
-         width: 100%;
-         font-weight: bold;
-         color: #fff;
-       }
-     
-       .card-subtitle {
-         font-size: 0.8em;
-         font-weight: bold;
-         position: absolute;
-         top: 90%;
-         right: -80%;
-         width: 100%;
-         color: whitesmoke;
-       }  
-       
-       .fixline2 {
-         font-size: 0.8em;
-         font-weight: bold;
-         position: absolute;
-         top: 90%;
-         right: -50%;
-         width: 100%;
-         color: rgb(83, 83, 83);
-       }   
-
 }
