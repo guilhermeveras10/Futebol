@@ -30716,6 +30716,63 @@ page-elenco .col6 {
   background-color: transparent;
 }
 
+page-estatisticas .artilheiros {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: black;
+  background-color: #ebebeb;
+}
+
+page-estatisticas .nome {
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  font-size: 0.9em;
+  width: 100%;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+page-estatisticas .posicao {
+  position: absolute;
+  top: 43%;
+  left: 18%;
+  font-size: 0.6em;
+  width: 100%;
+  font-weight: 100;
+  color: black;
+}
+
+page-estatisticas .gols {
+  position: absolute;
+  top: 18%;
+  left: 92%;
+  font-size: 0.9em;
+  width: 100%;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+page-estatisticas ion-card {
+  position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+}
+
+page-estatisticas ion-card img {
+  width: 50px;
+  height: 50px;
+}
+
+page-estatisticas .col6 {
+  background-color: transparent;
+}
+
 page-jogos ion-card {
   position: relative;
   top: -15%;
@@ -30848,9 +30905,37 @@ page-noticias .fixline2 {
   color: #535353;
 }
 
+page-tabelas .artilheiros {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #4d4d4d;
+  background-color: #ebebeb;
+  text-align: center;
+}
+
+page-tabelas img {
+  height: 30px;
+  width: 30px;
+}
+
+page-tabelas table th {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #4d4d4d;
+}
+
+page-tabelas table td {
+  padding: 20px;
+  font-size: 9px;
+  text-align: end;
+  color: #4d4d4d;
+}
+
 page-videos ion-card {
   position: relative;
-  top: -15%;
   margin-left: 0 !important;
   margin-right: 0 !important;
   margin-top: 0 !important;

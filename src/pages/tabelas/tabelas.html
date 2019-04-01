@@ -6,13 +6,29 @@
     <ion-title>Tabelas</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <div class="artilheiros">Brasileirão Série C</div>
+    <br>
+    <table>
+        <thead>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>J</th>
+          <th>SG</th>
+          <th>Pts</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let time of times">
+            <td>{{time.posicao}}</td>
+            <td>
+              <img [src]="time.meuescudo">
+            </td>
+            <td>{{time.nomeDoTime}}</td>
+            <td>{{time.j}}</td>
+            <td>{{time.sg}}</td>
+            <td>{{time.pts}}</td>
+          </tr  >
+        </tbody>
+      </table>
 </ion-content>

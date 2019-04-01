@@ -3,16 +3,22 @@
     <button ion-button menuToggle right>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Estatítica</ion-title>
+    <ion-title>Estatística</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <div class="artilheiros">Artilheiros</div>
+  <ion-grid>
+    <ion-row *ngFor="let jogador of jogadores">
+        <ion-card class="col6">
+          <img src="{{jogador.url}}" />
+          <div class="nome">{{jogador.nome}}</div>
+          <div class="sobrenome">{{jogador.sobrenome}}</div>
+          <div class="posicao">{{jogador.posicao}}</div>
+          <div class="gols">{{jogador.gols}}</div>
+          <div class="de">{{jogador.localdenascimento}}</div>
+          <div class="nacionalidade">{{jogador.nacionalidade}}</div>
+        </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>
