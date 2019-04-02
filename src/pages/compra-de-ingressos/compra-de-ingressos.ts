@@ -17,11 +17,11 @@ import { JogodProvider } from '../../providers/jogod/jogod';
 })
 export class CompraDeIngressosPage {
   
-  public ingressos: any;
+  public jogos: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public ingressosProvider: JogodProvider) {
     ingressosProvider.getJogo().subscribe(snapshot => {
-      this.ingressos = snapshot.reverse();
+      this.jogos = snapshot.reverse();
     });
   }
 }

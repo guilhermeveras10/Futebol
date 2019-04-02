@@ -30578,6 +30578,71 @@ page-chat-da-torcida ion-content {
   background-image: url("../../assets/imgs/fundo.png");
 }
 
+page-compra-de-ingressos ion-card {
+  position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  height: 130px;
+}
+
+page-compra-de-ingressos .data {
+  position: absolute;
+  font-size: 0.7em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  top: 10%;
+}
+
+page-compra-de-ingressos .nomeDoMeuTime {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  font-size: 0.8em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-compra-de-ingressos .meuescudo {
+  position: absolute;
+  left: 36%;
+  top: 25%;
+}
+
+page-compra-de-ingressos .minhaQuantidadeDeGols {
+  position: absolute;
+  left: 49%;
+  top: 35%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: silver;
+}
+
+page-compra-de-ingressos .escudoOponente {
+  position: absolute;
+  left: 58%;
+  top: 25%;
+}
+
+page-compra-de-ingressos .nomeDoOponente {
+  position: absolute;
+  left: 66%;
+  top: 30%;
+  font-size: 0.8em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-compra-de-ingressos .button {
+  position: relative;
+  left: 26%;
+  top: 60%;
+}
+
 page-configuracoes ion-content {
   background-image: url("../../assets/imgs/fundo.png");
 }
