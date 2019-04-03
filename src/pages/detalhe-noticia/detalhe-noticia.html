@@ -13,13 +13,13 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
   <img src="{{noticia.url}}" style="height:200px;" class="img"/>
   <img src="../../assets/imgs/logo.png" style="width:30px;height: 34px;" class="logo">
   <div class="nome">Joinville</div>
   <div class="fixline2">{{ noticia.timestamp | date: 'dd.MM.yyyy'}}</div>
   <div class="fixline">{{noticia.nome}}</div>
-
+  <img src="../../assets/imgs/barra.png" style="width:200px;height:10px;" class="barra">
   <div class="fixline3">{{noticia.descricao}}</div>
 </ion-content>

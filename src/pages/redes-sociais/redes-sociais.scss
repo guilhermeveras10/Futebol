@@ -2,4 +2,50 @@ page-redes-sociais {
     ion-content {
         background-image: url('../../assets/imgs/fundo.png'); 
     }
+    .acompanhe {
+        position: relative;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: rgb(235, 235, 235);
+        text-align: center;
+    }
+    .imgFace {
+        position: absolute;
+        top: 58.5%;
+        left: 4%;
+    }
+    .face {
+        position: absolute;
+        top: 59%;
+        left: 13%;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(235, 235, 235);
+    }
+    .imgInsta {
+        position: absolute;
+        top: 66%;
+        left: 3%;
+    }
+    .insta {
+        position: absolute;
+        top: 67%;
+        left: 13%;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(235, 235, 235);
+    }
+    .imgTwintter {
+        position: absolute;
+        top: 74%;
+        left: 3%;
+    }
+    .twintter {
+        position: absolute;
+        top: 75%;
+        left: 13%;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(235, 235, 235);
+    }
 }

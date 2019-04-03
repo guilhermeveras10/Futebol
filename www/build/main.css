@@ -30660,6 +30660,12 @@ page-configuracoes .button {
   color: white;
 }
 
+page-detalhe-noticia .barra {
+  position: absolute;
+  top: 63.5%;
+  left: 4%;
+}
+
 page-detalhe-noticia .img {
   width: 100%;
 }
@@ -30980,6 +30986,59 @@ page-noticias .fixline2 {
 
 page-redes-sociais ion-content {
   background-image: url("../../assets/imgs/fundo.png");
+}
+
+page-redes-sociais .acompanhe {
+  position: relative;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ebebeb;
+  text-align: center;
+}
+
+page-redes-sociais .imgFace {
+  position: absolute;
+  top: 58.5%;
+  left: 4%;
+}
+
+page-redes-sociais .face {
+  position: absolute;
+  top: 59%;
+  left: 13%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ebebeb;
+}
+
+page-redes-sociais .imgInsta {
+  position: absolute;
+  top: 66%;
+  left: 3%;
+}
+
+page-redes-sociais .insta {
+  position: absolute;
+  top: 67%;
+  left: 13%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ebebeb;
+}
+
+page-redes-sociais .imgTwintter {
+  position: absolute;
+  top: 74%;
+  left: 3%;
+}
+
+page-redes-sociais .twintter {
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ebebeb;
 }
 
 page-tabelas .artilheiros {
