@@ -92,10 +92,10 @@ export class MyApp {
     ];
 
     this.pagesTorcedor = [
-      { title: 'Ajude o Clube', component: AjudeOClubePage },
+      { title: 'JEC Cap', component: AjudeOClubePage },
       { title: 'Extrato de arrecadação', component: ExtratoDaArrecadacaoPage },
-      { title: 'Programa de Pontos', component: ProgramaDePontosPage },
-      { title: 'Cronograma de Sorteios', component: CronogramaDeSorteiosPage }
+      { title: 'Sorteios', component: CronogramaDeSorteiosPage },
+      { title: 'Programa de Pontos', component: ProgramaDePontosPage }
     ];
 
   }
