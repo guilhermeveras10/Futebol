@@ -1,3 +1,70 @@
 page-enquetes {
-
+    ion-card {
+        position: relative;
+        margin-left:0 !important;
+        margin-right:0 !important;
+        margin-top:0 !important;
+        width:100% !important;
+        height: 180px;
+    }
+    .titulo {
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        font-size: 1.0em;
+        font-weight: bold;
+        color: black;
+    }
+    .opcao1Img {
+        position: absolute;
+        left: 2%;
+        top: 17%;
+    }
+    .opcao1 {
+        position: absolute;
+        left: 11%;
+        top: 20%;
+        font-size: 1.0em;
+        font-weight: bold;
+        color: black;
+    }
+    .opcao2Img {
+        position: absolute;
+        left: 2%;
+        top: 36%;
+    }
+    .opcao2 {
+        position: absolute;
+        left: 11%;
+        top: 39%;
+        font-size: 1.0em;
+        font-weight: bold;
+        color: black;
+    }
+    .opcao3Img {
+        position: absolute;
+        left: 2%;
+        top: 55%;
+    }
+    .opcao3 {
+        position: absolute;
+        left: 11%;
+        top: 58%;
+        font-size: 1.0em;
+        font-weight: bold;
+        color: black;
+    }
+    .opcao4Img {
+        position: absolute;
+        left: 2%;
+        top: 74%;
+    }
+    .opcao4 {
+        position: absolute;
+        left: 11%;
+        top: 77%;
+        font-size: 1.0em;
+        font-weight: bold;
+        color: black;
+    }
 }

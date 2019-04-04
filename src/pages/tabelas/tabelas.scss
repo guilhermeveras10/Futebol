@@ -15,13 +15,16 @@ page-tabelas {
       }
       table th {
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 9px;
         color: rgb(77, 77, 77);
-    }
+      }
       table td {
         padding: 20px;
         font-size: 9px;
         text-align: end;
         color: rgb(77, 77, 77);
+      }
+      table {
+        width: 100%;
       }
 }

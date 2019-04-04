@@ -52,6 +52,8 @@ import { JogodProvider } from '../providers/jogod/jogod';
 import { TimesProvider } from '../providers/times/times';
 import { EnquetesPageModule } from '../pages/enquetes/enquetes.module';
 import { EnqueteProvider } from '../providers/enquete/enquete';
+import { LojaVirtualPageModule } from '../pages/loja-virtual/loja-virtual.module';
+import { ProdutosProvider } from '../providers/produtos/produtos';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -76,7 +78,6 @@ export const firebaseConfig = {
     HistoriaDoClubePage,
     ChatDaTorcidaPage,
     RedesSociaisPage,
-    LojaVirtualPage,
     CompraDeIngressosPage,
     SejaSocioPage,
     AjudeOClubePage,
@@ -99,6 +100,7 @@ export const firebaseConfig = {
     ConfiguracoesPageModule,
     LoginPageModule,
     EnquetesPageModule,
+    LojaVirtualPageModule,
     IonMaskModule.forRoot()
   ],
   bootstrap: [IonicApp],
@@ -137,6 +139,7 @@ export const firebaseConfig = {
     EnqueteProvider,
     JogadoresProvider,
     TimesProvider,
+    ProdutosProvider,
     JogodProvider
   ]
 })

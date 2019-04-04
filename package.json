@@ -34,7 +34,6 @@
         "angular2-moment": "^1.6.0",
         "angularfire2": "4.0.0-rc.0",
         "autoprefixer": "^7.1.6",
-        "cordova-android": "7.1.1",
         "cordova-ios": "4.5.4",
         "cordova-plugin-accountkit": "^1.4.0",
         "cordova-plugin-compat": "^1.2.0",
@@ -90,8 +89,7 @@
             "cordova-plugin-streaming-media": {}
         },
         "platforms": [
-            "ios",
-            "android"
+            "ios"
         ]
     }
 }

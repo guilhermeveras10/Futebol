@@ -1,3 +1,28 @@
 page-loja-virtual {
-
+       .nome {
+        position: absolute;
+        top: 70%;
+        left: 6%;
+        font-size: 0.5em;
+        width: 95%;
+        font-weight: 100;
+        color: rgb(105, 105, 105);
+       }
+       .valor {
+        position: absolute;
+        top: 82%;
+        font-size: 1.0em;
+        width: 100%;
+        font-weight: 200;
+        text-align: center;
+        color: black;
+       }
+       ion-card {
+         position: relative;
+         margin-left:0 !important;
+         margin-right:0 !important;
+         margin-top:0 !important;
+         width:100% !important;
+         height: 190px;
+       }
 }

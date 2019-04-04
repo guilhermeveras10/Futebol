@@ -11,9 +11,16 @@
     <ion-grid>
         <ion-row>
           <ion-card *ngFor="let enquete of enquetes">
-              <ion-label stacked>{{enquete.titulo}}</ion-label>
-              <img src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">
-          </ion-card>
+              <div class="titulo">{{enquete.titulo}}</div>
+              <img class="opcao1Img" src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">
+              <div class="opcao1">{{enquete.opcao1}}</div>
+              <img class="opcao2Img" src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">
+              <div class="opcao2">{{enquete.opcao2}}</div>
+              <img class="opcao3Img" src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">
+              <div class="opcao3">{{enquete.opcao3}}</div>
+              <img class="opcao4Img" src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">
+              <div class="opcao4">{{enquete.opcao4}}</div>
+            </ion-card>
         </ion-row>
       </ion-grid>
 </ion-content>

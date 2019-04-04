@@ -24,6 +24,9 @@ export class ProgramaDePontosPage {
       this.produtos = snapshot.reverse();
     });
   }
+  detalhe(produto: any) {
+
+  }
 }
 
 

@@ -1,3 +1,27 @@
 page-programa-de-pontos {
-
+    .nome {
+        position: absolute;
+        top: 65%;
+        font-size: 0.8em;
+        width: 95%;
+        font-weight: bold;
+        color: black;
+       }
+       ion-card {
+         position: relative;
+         margin-left:0 !important;
+         margin-right:0 !important;
+         margin-top:0 !important;
+         width:100% !important;
+         height: 200px;
+       }
+       .button {
+        position: absolute;
+        left: 18%;
+        font-size: 0.9em;
+        font-weight: bold;
+        width: 65%;
+        height: 5%;
+        top: 75%;
+      }
 }

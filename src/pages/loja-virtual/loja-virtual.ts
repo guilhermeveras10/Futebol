@@ -24,6 +24,10 @@ export class LojaVirtualPage {
       this.produtos = snapshot.reverse();
     });
   }
+
+  detalhe(produto: any) {
+
+  }
 }
 
 

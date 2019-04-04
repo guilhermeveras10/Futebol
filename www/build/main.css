@@ -30795,6 +30795,84 @@ page-elenco .col6 {
   background-color: transparent;
 }
 
+page-enquetes ion-card {
+  position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  height: 180px;
+}
+
+page-enquetes .titulo {
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: black;
+}
+
+page-enquetes .opcao1Img {
+  position: absolute;
+  left: 2%;
+  top: 17%;
+}
+
+page-enquetes .opcao1 {
+  position: absolute;
+  left: 11%;
+  top: 20%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: black;
+}
+
+page-enquetes .opcao2Img {
+  position: absolute;
+  left: 2%;
+  top: 36%;
+}
+
+page-enquetes .opcao2 {
+  position: absolute;
+  left: 11%;
+  top: 39%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: black;
+}
+
+page-enquetes .opcao3Img {
+  position: absolute;
+  left: 2%;
+  top: 55%;
+}
+
+page-enquetes .opcao3 {
+  position: absolute;
+  left: 11%;
+  top: 58%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: black;
+}
+
+page-enquetes .opcao4Img {
+  position: absolute;
+  left: 2%;
+  top: 74%;
+}
+
+page-enquetes .opcao4 {
+  position: absolute;
+  left: 11%;
+  top: 77%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: black;
+}
+
 page-estatisticas .artilheiros {
   position: relative;
   left: 0%;
@@ -30926,6 +31004,35 @@ page-login .h6 {
   color: white;
 }
 
+page-loja-virtual .nome {
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  font-size: 0.5em;
+  width: 95%;
+  font-weight: 100;
+  color: dimgray;
+}
+
+page-loja-virtual .valor {
+  position: absolute;
+  top: 82%;
+  font-size: 1.0em;
+  width: 100%;
+  font-weight: 200;
+  text-align: center;
+  color: black;
+}
+
+page-loja-virtual ion-card {
+  position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  height: 190px;
+}
+
 page-noticias .fixline {
   height: 60px;
   margin-bottom: 7px;
@@ -30982,6 +31089,34 @@ page-noticias .fixline2 {
   right: -50%;
   width: 100%;
   color: #535353;
+}
+
+page-programa-de-pontos .nome {
+  position: absolute;
+  top: 65%;
+  font-size: 0.8em;
+  width: 95%;
+  font-weight: bold;
+  color: black;
+}
+
+page-programa-de-pontos ion-card {
+  position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  height: 200px;
+}
+
+page-programa-de-pontos .button {
+  position: absolute;
+  left: 18%;
+  font-size: 0.9em;
+  font-weight: bold;
+  width: 65%;
+  height: 5%;
+  top: 75%;
 }
 
 page-redes-sociais ion-content {
@@ -31059,7 +31194,7 @@ page-tabelas img {
 
 page-tabelas table th {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 9px;
   color: #4d4d4d;
 }
 
@@ -31068,6 +31203,10 @@ page-tabelas table td {
   font-size: 9px;
   text-align: end;
   color: #4d4d4d;
+}
+
+page-tabelas table {
+  width: 100%;
 }
 
 page-videos ion-card {

@@ -7,12 +7,18 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content >
+    <ion-grid>
+        <ion-row>
+            <ion-col *ngFor="let produto of produtos" col-5>
+            <ion-card>
+                <div style="text-align:center">
+                    <img src="{{produto.url}}" style="width:130px;height:130px;">
+              <div class="nome">{{produto.nome}}</div>
+              <button class="button" ion-button padding round color="vermelhoEscuro" (click)="detalhes(produto)">{{produto.pontos}} Pts</button>
+                  </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 </ion-content>
