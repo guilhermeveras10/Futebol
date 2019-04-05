@@ -30593,13 +30593,22 @@ page-compra-de-ingressos .data {
   width: 100%;
   font-weight: bold;
   color: black;
-  top: 10%;
+  top: 25%;
+}
+
+page-compra-de-ingressos .campeonato {
+  position: absolute;
+  font-size: 1.2em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  top: 9%;
 }
 
 page-compra-de-ingressos .nomeDoMeuTime {
   position: absolute;
   left: 20%;
-  top: 30%;
+  top: 40%;
   font-size: 0.8em;
   width: 100%;
   font-weight: bold;
@@ -30609,13 +30618,13 @@ page-compra-de-ingressos .nomeDoMeuTime {
 page-compra-de-ingressos .meuescudo {
   position: absolute;
   left: 36%;
-  top: 25%;
+  top: 35%;
 }
 
 page-compra-de-ingressos .minhaQuantidadeDeGols {
   position: absolute;
   left: 49%;
-  top: 35%;
+  top: 45%;
   font-size: 1.0em;
   font-weight: bold;
   color: silver;
@@ -30624,13 +30633,13 @@ page-compra-de-ingressos .minhaQuantidadeDeGols {
 page-compra-de-ingressos .escudoOponente {
   position: absolute;
   left: 58%;
-  top: 25%;
+  top: 35%;
 }
 
 page-compra-de-ingressos .nomeDoOponente {
   position: absolute;
   left: 66%;
-  top: 30%;
+  top: 40%;
   font-size: 0.8em;
   width: 100%;
   font-weight: bold;
@@ -30937,7 +30946,7 @@ page-jogos ion-card {
   margin-right: 0 !important;
   margin-top: 0 !important;
   width: 100% !important;
-  height: 70px;
+  height: 110px;
 }
 
 page-jogos .data {
@@ -30946,13 +30955,13 @@ page-jogos .data {
   width: 100%;
   font-weight: bold;
   color: black;
-  top: 10%;
+  top: 48%;
 }
 
 page-jogos .nomeDoMeuTime {
   position: absolute;
   left: 20%;
-  top: 40%;
+  top: 75%;
   font-size: 0.8em;
   width: 100%;
   font-weight: bold;
@@ -30962,29 +30971,44 @@ page-jogos .nomeDoMeuTime {
 page-jogos .meuescudo {
   position: absolute;
   left: 36%;
-  top: 25%;
+  top: 68%;
 }
 
 page-jogos .minhaQuantidadeDeGols {
   position: absolute;
   left: 45%;
-  top: 35%;
+  top: 72%;
   font-size: 1.0em;
   font-weight: bold;
   color: black;
   background-color: #ebebeb;
 }
 
+page-jogos .nomeDoCampeonato {
+  position: relative;
+  left: 12%;
+  top: 25%;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: black;
+}
+
 page-jogos .escudoOponente {
   position: absolute;
   left: 58%;
-  top: 25%;
+  top: 68%;
+}
+
+page-jogos .campeonato {
+  position: absolute;
+  left: 3%;
+  top: 19%;
 }
 
 page-jogos .nomeDoOponente {
   position: absolute;
   left: 66%;
-  top: 40%;
+  top: 75%;
   font-size: 0.8em;
   width: 100%;
   font-weight: bold;

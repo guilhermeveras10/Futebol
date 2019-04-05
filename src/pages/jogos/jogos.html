@@ -11,6 +11,8 @@
     <ion-grid>
         <ion-row>
           <ion-card *ngFor="let jogo of jogos">
+            <img class="campeonato" src="{{jogo.campeonato}}" style="width:30px;height:25px;" />
+            <div class="nomeDoCampeonato">{{jogo.nomeDoCampeonato}}</div>
             <div class="data" style="text-align:center">{{jogo.dataDoJogo}}</div>
             <div class="nomeDoMeuTime">{{jogo.nomeDoTime}}</div>
             <img class="meuescudo" src="{{jogo.meuescudo}}" style="width:20px;height:25px;" />

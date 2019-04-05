@@ -11,6 +11,7 @@
       <ion-row>
         <ion-card *ngFor="let jogo of jogos">
           <div class="data" style="text-align:center">{{jogo.dataDoJogo}}</div>
+          <div class="campeonato" style="text-align:center">{{jogo.nomeDoCampeonato}}</div>
           <div class="nomeDoMeuTime">{{jogo.nomeDoTime}}</div>
           <img class="meuescudo" src="{{jogo.meuescudo}}" style="width:20px;height:25px;" />
           <div class="minhaQuantidadeDeGols">X</div>

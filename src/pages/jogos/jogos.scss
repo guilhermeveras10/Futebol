@@ -6,7 +6,7 @@ page-jogos {
         margin-right:0 !important;
         margin-top:0 !important;
         width:100% !important;
-        height: 70px;
+        height: 110px;
       }
         
       .data {
@@ -15,13 +15,13 @@ page-jogos {
         width: 100%;
         font-weight: bold;
         color: black;
-        top: 10%;
+        top: 48%;
       }
 
       .nomeDoMeuTime {
         position: absolute;
         left: 20%;
-        top: 40%;
+        top: 75%;
         font-size: 0.8em;
         width: 100%;
         font-weight: bold;
@@ -31,29 +31,44 @@ page-jogos {
       .meuescudo {
         position: absolute;
         left: 36%;
-        top: 25%;
+        top: 68%;
       }
 
       .minhaQuantidadeDeGols {
         position: absolute;
         left: 45%;
-        top: 35%;
+        top: 72%;
         font-size: 1.0em;
         font-weight: bold;
         color: black;
         background-color: rgb(235, 235, 235);
       }
 
+      .nomeDoCampeonato {
+        position: relative;
+        left: 12%;
+        top: 25%;
+        font-size: 0.9em;
+        font-weight: bold;
+        color: black;
+      }
+
       .escudoOponente {
         position: absolute;
         left: 58%;
-        top: 25%;
+        top: 68%;
+      }
+
+      .campeonato {
+        position: absolute;
+        left: 3%;
+        top: 19%;
       }
 
       .nomeDoOponente {
         position: absolute;
         left: 66%;
-        top: 40%;
+        top: 75%;
         font-size: 0.8em;
         width: 100%;
         font-weight: bold;

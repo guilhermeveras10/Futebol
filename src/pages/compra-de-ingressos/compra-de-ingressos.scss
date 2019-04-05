@@ -15,13 +15,22 @@ page-compra-de-ingressos {
         width: 100%;
         font-weight: bold;
         color: black;
-        top: 10%;
+        top: 25%;
+      }
+
+      .campeonato {
+        position: absolute;
+        font-size: 1.2em;
+        width: 100%;
+        font-weight: bold;
+        color: black;
+        top: 9%;
       }
 
       .nomeDoMeuTime {
         position: absolute;
         left: 20%;
-        top: 30%;
+        top: 40%;
         font-size: 0.8em;
         width: 100%;
         font-weight: bold;
@@ -31,13 +40,13 @@ page-compra-de-ingressos {
       .meuescudo {
         position: absolute;
         left: 36%;
-        top: 25%;
+        top: 35%;
       }
 
       .minhaQuantidadeDeGols {
         position: absolute;
         left: 49%;
-        top: 35%;
+        top: 45%;
         font-size: 1.0em;
         font-weight: bold;
         color: silver;
@@ -46,13 +55,13 @@ page-compra-de-ingressos {
       .escudoOponente {
         position: absolute;
         left: 58%;
-        top: 25%;
+        top: 35%;
       }
 
       .nomeDoOponente {
         position: absolute;
         left: 66%;
-        top: 30%;
+        top: 40%;
         font-size: 0.8em;
         width: 100%;
         font-weight: bold;
