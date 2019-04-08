@@ -26,7 +26,7 @@ export class LojaVirtualPage {
   }
 
   detalhe(produto: any) {
-
+    this.navCtrl.push('DetalheProdutoPage', { produto: produto });
   }
 }
 

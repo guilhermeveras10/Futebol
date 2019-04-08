@@ -1,14 +1,14 @@
 webpackJsonp([15],{
 
-/***/ 508:
+/***/ 510:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadastroPageModule", function() { return CadastroPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatDaTorcidaPageModule", function() { return ChatDaTorcidaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_da_torcida__ = __webpack_require__(130);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CadastroPageModule = (function () {
-    function CadastroPageModule() {
+var ChatDaTorcidaPageModule = (function () {
+    function ChatDaTorcidaPageModule() {
     }
-    CadastroPageModule = __decorate([
+    ChatDaTorcidaPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__cadastro__["a" /* CadastroPage */],
+                __WEBPACK_IMPORTED_MODULE_2__chat_da_torcida__["a" /* ChatDaTorcidaPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__cadastro__["a" /* CadastroPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__chat_da_torcida__["a" /* ChatDaTorcidaPage */]),
             ],
         })
-    ], CadastroPageModule);
-    return CadastroPageModule;
+    ], ChatDaTorcidaPageModule);
+    return ChatDaTorcidaPageModule;
 }());
 
-//# sourceMappingURL=cadastro.module.js.map
+//# sourceMappingURL=chat-da-torcida.module.js.map
 
 /***/ })
 

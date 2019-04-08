@@ -24,4 +24,22 @@ page-programa-de-pontos {
         height: 5%;
         top: 75%;
       }
+      .pontos {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        font-size: 0.8em;
+        font-weight: bold;
+        color: black;
+        background-color: rgb(235, 235, 235);
+       }
+
+      .extrato {
+        position: relative;
+        left: 50%;
+        top: -4.5%;
+        font-size: 0.8em;
+        background-color: transparent;
+        color: silver;
+      }
 }

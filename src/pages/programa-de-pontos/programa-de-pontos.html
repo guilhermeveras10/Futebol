@@ -7,7 +7,9 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content >
+<ion-content>
+    <div class="pontos">{{(torcedor)?.pontos}} Pontos</div>
+    <button class="extrato" ion-button (click)="extrato()">Extrato de pontos</button>
     <ion-grid>
         <ion-row>
             <ion-col *ngFor="let produto of produtos" col-5>
@@ -15,7 +17,7 @@
                 <div style="text-align:center">
                     <img src="{{produto.url}}" style="width:130px;height:130px;">
               <div class="nome">{{produto.nome}}</div>
-              <button class="button" ion-button padding round color="vermelhoEscuro" (click)="detalhes(produto)">{{produto.pontos}} Pts</button>
+              <button class="button" ion-button padding round color="vermelhoEscuro" (click)="comprar(produto)">{{produto.pontos}} Pts</button>
                   </div>
             </ion-card>
           </ion-col>

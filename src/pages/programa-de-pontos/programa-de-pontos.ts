@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { ProdutosProvider } from '../../providers/produtos/produtos';
+
+import { UserProvider } from '../../providers/user/user';
 
 /**
  * Generated class for the NoticiasPage page.
@@ -16,16 +18,32 @@ import { ProdutosProvider } from '../../providers/produtos/produtos';
   templateUrl: 'programa-de-pontos.html',
 })
 export class ProgramaDePontosPage {
-  
-  public produtos: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public produtosProvider: ProdutosProvider) {
+  public produtos: any;
+  torcedor: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public produtosProvider: ProdutosProvider, private authProvider: UserProvider, public toastCtrl: ToastController) {
     produtosProvider.getProdutosPontos().subscribe(snapshot => {
       this.produtos = snapshot.reverse();
     });
+    authProvider.getTorcedor().subscribe(snapshot => {
+      this.torcedor = snapshot;
+    });
   }
-  detalhe(produto: any) {
+  comprar(produto: any) {
+    if (this.torcedor.pontos < produto.pontos) {
+      this.displayToast("Sua quantidade de pontos é insuficiente")
+    } else {
 
+      this.displayToast("Retire seu produto na loja")
+    }
+  }
+  extrato() {
+    console.log(this.torcedor.pontos);
+  }
+
+  displayToast(message) {
+    this.toastCtrl.create({ duration: 2000, message }).present();
   }
 }
 

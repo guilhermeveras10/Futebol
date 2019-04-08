@@ -1,0 +1,90 @@
+page-detalhe-produto {
+
+    .barra {
+        position: absolute;
+        top: 55%;
+        left: 4%;
+    }
+    .img {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+    }
+    .nome{
+        position: absolute;
+        top: 40%;
+        font-size: 1.1em;
+        width: 100%;
+        font-weight: 100;
+        color: black;
+        text-align: center;
+    }
+   .descricao {
+        position: absolute;
+        top: 60%;
+        left: 14%;
+        height: 60px;
+        font-size: 0.8em;
+        width: 78%;
+        color: black;
+    }
+    .button {
+        position: absolute;
+        left: 40%;
+        font-size: 0.9em;
+        font-weight: bold;
+        top: 85%;
+    }
+    .pontos{
+        position: absolute;
+        top: 45%;
+        // left: 30%;
+        font-size: 1.2em;
+        width: 100%;
+        font-weight: bold;
+        color: black;
+        // background-color: #A50000;
+        text-align: center;
+    }
+    .aumentar{
+        position: absolute;
+        left: 40%;
+        font-size: 1.2em;
+        font-weight: bold;
+        top: 50%;
+        color: #A50000;
+        background-color: transparent;
+    }
+    .abaixar{
+        position: absolute;
+        left: 51%;
+        font-size: 1.2em;
+        font-weight: bold;
+        top: 50%;
+        color: #A50000;
+        background-color: transparent;
+    }
+    .quantidade{
+        position: absolute;
+        top: 50%;
+        font-size: 1.1em;
+        width: 100%;
+        font-weight: 200;
+        color: black;
+        text-align: center;
+    }
+    .h6 {
+        position: absolute;
+        top: 70%;
+        color: black;
+        left: 10%;
+    }
+    .obs{
+        position: absolute;
+        top: 76%;
+        color: black;
+        left: 10%;
+        width: 80%;
+        background-color: silver;
+    }
+}

@@ -28,6 +28,7 @@ import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
 import { DetalheNoticiaPage } from '../pages/detalhe-noticia/detalhe-noticia';
 import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
+import { DetalheProdutoPage } from '../pages/detalhe-produto/detalhe-produto';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -54,6 +55,7 @@ import { EnquetesPageModule } from '../pages/enquetes/enquetes.module';
 import { EnqueteProvider } from '../providers/enquete/enquete';
 import { LojaVirtualPageModule } from '../pages/loja-virtual/loja-virtual.module';
 import { ProdutosProvider } from '../providers/produtos/produtos';
+import { DetalheProdutoPageModule } from '../pages/detalhe-produto/detalhe-produto.module';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -84,6 +86,7 @@ export const firebaseConfig = {
     ExtratoDaArrecadacaoPage,
     ProgramaDePontosPage,
     CronogramaDeSorteiosPage,
+    // DetalheProdutoPage,
     CadastroPage
   ],
   imports: [
@@ -97,6 +100,7 @@ export const firebaseConfig = {
     MomentModule,
     IonicModule.forRoot(MyApp),
     DetalheNoticiaPageModule,
+    DetalheProdutoPageModule,
     ConfiguracoesPageModule,
     LoginPageModule,
     EnquetesPageModule,
@@ -126,6 +130,7 @@ export const firebaseConfig = {
     CronogramaDeSorteiosPage,
     CadastroPage,
     LoginPage,
+    DetalheNoticiaPage,
     DetalheNoticiaPage,
     ConfiguracoesPage
   ],

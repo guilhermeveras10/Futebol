@@ -30726,6 +30726,102 @@ page-detalhe-noticia .fixline2 {
   color: #535353;
 }
 
+page-detalhe-produto .barra {
+  position: absolute;
+  top: 55%;
+  left: 4%;
+}
+
+page-detalhe-produto .img {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+}
+
+page-detalhe-produto .nome {
+  position: absolute;
+  top: 40%;
+  font-size: 1.1em;
+  width: 100%;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+}
+
+page-detalhe-produto .descricao {
+  position: absolute;
+  top: 60%;
+  left: 14%;
+  height: 60px;
+  font-size: 0.8em;
+  width: 78%;
+  color: black;
+}
+
+page-detalhe-produto .button {
+  position: absolute;
+  left: 40%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 85%;
+}
+
+page-detalhe-produto .pontos {
+  position: absolute;
+  top: 45%;
+  font-size: 1.2em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+page-detalhe-produto .aumentar {
+  position: absolute;
+  left: 40%;
+  font-size: 1.2em;
+  font-weight: bold;
+  top: 50%;
+  color: #A50000;
+  background-color: transparent;
+}
+
+page-detalhe-produto .abaixar {
+  position: absolute;
+  left: 51%;
+  font-size: 1.2em;
+  font-weight: bold;
+  top: 50%;
+  color: #A50000;
+  background-color: transparent;
+}
+
+page-detalhe-produto .quantidade {
+  position: absolute;
+  top: 50%;
+  font-size: 1.1em;
+  width: 100%;
+  font-weight: 200;
+  color: black;
+  text-align: center;
+}
+
+page-detalhe-produto .h6 {
+  position: absolute;
+  top: 70%;
+  color: black;
+  left: 10%;
+}
+
+page-detalhe-produto .obs {
+  position: absolute;
+  top: 76%;
+  color: black;
+  left: 10%;
+  width: 80%;
+  background-color: silver;
+}
+
 page-elenco .nome {
   position: absolute;
   top: 10%;
@@ -31141,6 +31237,25 @@ page-programa-de-pontos .button {
   width: 65%;
   height: 5%;
   top: 75%;
+}
+
+page-programa-de-pontos .pontos {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: black;
+  background-color: #ebebeb;
+}
+
+page-programa-de-pontos .extrato {
+  position: relative;
+  left: 50%;
+  top: -4.5%;
+  font-size: 0.8em;
+  background-color: transparent;
+  color: silver;
 }
 
 page-redes-sociais ion-content {
