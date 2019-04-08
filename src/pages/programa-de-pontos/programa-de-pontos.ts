@@ -39,7 +39,6 @@ export class ProgramaDePontosPage {
     }
   }
   extrato() {
-    console.log(this.torcedor.pontos);
   }
 
   displayToast(message) {
