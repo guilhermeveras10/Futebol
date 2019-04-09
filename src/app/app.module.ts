@@ -56,6 +56,8 @@ import { EnqueteProvider } from '../providers/enquete/enquete';
 import { LojaVirtualPageModule } from '../pages/loja-virtual/loja-virtual.module';
 import { ProdutosProvider } from '../providers/produtos/produtos';
 import { DetalheProdutoPageModule } from '../pages/detalhe-produto/detalhe-produto.module';
+import { ExtratoDePontosPage } from '../pages/extrato-de-pontos/extrato-de-pontos';
+import { ExtratoDePontosPageModule } from '../pages/extrato-de-pontos/extrato-de-pontos.module';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -86,6 +88,7 @@ export const firebaseConfig = {
     ExtratoDaArrecadacaoPage,
     ProgramaDePontosPage,
     CronogramaDeSorteiosPage,
+    // ExtratoDePontosPage,
     // DetalheProdutoPage,
     CadastroPage
   ],
@@ -101,6 +104,7 @@ export const firebaseConfig = {
     IonicModule.forRoot(MyApp),
     DetalheNoticiaPageModule,
     DetalheProdutoPageModule,
+    ExtratoDePontosPageModule,
     ConfiguracoesPageModule,
     LoginPageModule,
     EnquetesPageModule,
@@ -111,6 +115,7 @@ export const firebaseConfig = {
   entryComponents: [
     MyApp,
     NoticiasPage,
+    ExtratoDePontosPage,
     VideosPage,
     TabelasPage,
     JogosPage,
@@ -131,7 +136,7 @@ export const firebaseConfig = {
     CadastroPage,
     LoginPage,
     DetalheNoticiaPage,
-    DetalheNoticiaPage,
+    // DetalheNoticiaPage,
     ConfiguracoesPage
   ],
   providers: [

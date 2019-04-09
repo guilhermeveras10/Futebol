@@ -20,7 +20,7 @@ import { UserProvider } from '../../providers/user/user';
 export class ProgramaDePontosPage {
 
   public produtos: any;
-  torcedor: any;
+  torcedor: any = {};
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public produtosProvider: ProdutosProvider, private authProvider: UserProvider, public toastCtrl: ToastController) {
     produtosProvider.getProdutosPontos().subscribe(snapshot => {
@@ -34,11 +34,18 @@ export class ProgramaDePontosPage {
     if (this.torcedor.pontos < produto.pontos) {
       this.displayToast("Sua quantidade de pontos é insuficiente")
     } else {
-
-      this.displayToast("Retire seu produto na loja")
+      this.torcedor.pontos = this.torcedor.pontos - produto.pontos;
+      this.authProvider.getTorcedor().update(this.torcedor).then(data => {
+        this.produtosProvider.setProdutoPontosExtrato(produto).then(() => {
+          this.produtosProvider.setProdutoPontosPedidos(produto, this.torcedor).then(() => {
+            this.displayToast("Retire seu produto na loja")
+          });
+        });
+      });
     }
   }
   extrato() {
+    this.navCtrl.push('ExtratoDePontosPage');
   }
 
   displayToast(message) {

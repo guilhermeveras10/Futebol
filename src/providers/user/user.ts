@@ -28,6 +28,7 @@ export class UserProvider {
   getUserData() { // get current user data from firebase
     return this.afAuth.auth.currentUser;
   }
+  
   getTorcedor() {
     let user = this.getUserData();
     return this.db.object('torcedores/' + user.uid);

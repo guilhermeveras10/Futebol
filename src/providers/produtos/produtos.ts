@@ -22,4 +22,29 @@ export class ProdutosProvider {
   getSorteios() {
     return this.db.list('sorteios');
   }
+  setProdutoPontosExtrato(produto) {
+    let user = this.authService.getUserData();
+    return this.db.list('extratoPontos/' + user.uid).push({
+      nome: produto.nome,
+      url: produto.url,
+      pontos: produto.pontos,
+      timestamp: Date.now()
+    });
+  }
+  setProdutoPontosPedidos(produto, torcedor) {
+    return this.db.list('pedidosFeitosParaRetirarNaLoja/').push({
+      torcedor_nome: torcedor.nome,
+      torcedor_cpf: torcedor.cpf,
+      torcedor_uid: torcedor.uid,
+      nome: produto.nome,
+      url: produto.url,
+      pontos: produto.pontos,
+      timestamp: Date.now(),
+      status: "PENDENTE"
+    });
+  }
+  getExtratoPontos() {
+    let user = this.authService.getUserData();
+    return this.db.list('extratoPontos/' + user.uid);
+  }
 }
