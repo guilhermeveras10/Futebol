@@ -23,6 +23,8 @@
   <div class="quantidade">{{item_qty}}</div>
   <h6 class="h6">Observações</h6>
   <ion-input class="obs" type="text" [(ngModel)]="obs"></ion-input>
+  <ion-label class="residencial">Frete para residencia: 38</ion-label>
+  <ion-checkbox class="frete" (click)="frete()"></ion-checkbox>
   <button clear (click)="inc()" class="aumentar"><ion-icon name="add-circle" ></ion-icon></button>
   <button clear (click)="dec()" class="abaixar"><ion-icon name="remove-circle" ></ion-icon></button>
   <button class="button" ion-button padding round color="vermelhoEscuro" (click)="comprar()">Comprar</button>

@@ -39,6 +39,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
+import { PayPal } from '@ionic-native/paypal'
 import { StreamingMedia } from '@ionic-native/streaming-media';
 // Import moment module
 import { MomentModule } from 'angular2-moment';
@@ -141,6 +142,7 @@ export const firebaseConfig = {
   ],
   providers: [
     StatusBar,
+    PayPal,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     StreamingMedia,

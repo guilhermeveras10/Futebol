@@ -30728,7 +30728,7 @@ page-detalhe-noticia .fixline2 {
 
 page-detalhe-produto .barra {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 4%;
 }
 
@@ -30750,7 +30750,7 @@ page-detalhe-produto .nome {
 
 page-detalhe-produto .descricao {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 14%;
   height: 60px;
   font-size: 0.8em;
@@ -30763,7 +30763,7 @@ page-detalhe-produto .button {
   left: 40%;
   font-size: 0.9em;
   font-weight: bold;
-  top: 85%;
+  top: 90%;
 }
 
 page-detalhe-produto .pontos {
@@ -30808,18 +30808,34 @@ page-detalhe-produto .quantidade {
 
 page-detalhe-produto .h6 {
   position: absolute;
-  top: 70%;
+  top: 75%;
   color: black;
   left: 10%;
 }
 
 page-detalhe-produto .obs {
   position: absolute;
-  top: 76%;
+  top: 81%;
   color: black;
   left: 10%;
   width: 80%;
   background-color: silver;
+}
+
+page-detalhe-produto .frete {
+  position: absolute;
+  left: 30%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 55%;
+}
+
+page-detalhe-produto .residencial {
+  position: absolute;
+  left: 36%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 54%;
 }
 
 page-elenco .nome {
