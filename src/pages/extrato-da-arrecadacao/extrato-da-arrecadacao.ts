@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProdutosProvider } from '../../providers/produtos/produtos';
 
 /**
  * Generated class for the ExtratoDaArrecadacaoPage page.
@@ -15,7 +16,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ExtratoDaArrecadacaoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public produtos: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public produtosProvider: ProdutosProvider) {
+    produtosProvider.getExtratoArrecadacao().subscribe(snapshot => {
+      this.produtos = snapshot.reverse();
+    });
   }
 
   ionViewDidLoad() {

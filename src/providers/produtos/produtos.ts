@@ -43,8 +43,36 @@ export class ProdutosProvider {
       status: "PENDENTE"
     });
   }
+
+  setProdutoPedidosCasa(produto, torcedor) {
+    return this.db.list('pedidosFeitosParaEntregar/').push({
+      torcedor_nome: torcedor.nome,
+      torcedor_cpf: torcedor.cpf,
+      torcedor_uid: torcedor.uid,
+      nome: produto.nome,
+      url: produto.url,
+      pontos: produto.pontos,
+      timestamp: Date.now(),
+      status: "PENDENTE"
+    });
+  }
+  setProdutoArrecadacaoExtrato(produto, valorString) {
+    let user = this.authService.getUserData();
+    return this.db.list('extratoArrecadacao/' + user.uid).push({
+      nome: produto.nome,
+      url: produto.url,
+      pontos: produto.pontos,
+      valor: produto.valor,
+      valorTotal: valorString,
+      timestamp: Date.now()
+    });
+  }
   getExtratoPontos() {
     let user = this.authService.getUserData();
     return this.db.list('extratoPontos/' + user.uid);
+  }
+  getExtratoArrecadacao() {
+    let user = this.authService.getUserData();
+    return this.db.list('extratoArrecadacao/' + user.uid);
   }
 }
