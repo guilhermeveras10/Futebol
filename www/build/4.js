@@ -1,14 +1,14 @@
 webpackJsonp([4],{
 
-/***/ 524:
+/***/ 526:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProgramaDePontosPageModule", function() { return ProgramaDePontosPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RedesSociaisPageModule", function() { return RedesSociaisPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__programa_de_pontos__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__redes_sociais__ = __webpack_require__(140);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ProgramaDePontosPageModule = (function () {
-    function ProgramaDePontosPageModule() {
+var RedesSociaisPageModule = (function () {
+    function RedesSociaisPageModule() {
     }
-    ProgramaDePontosPageModule = __decorate([
+    RedesSociaisPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__programa_de_pontos__["a" /* ProgramaDePontosPage */],
+                __WEBPACK_IMPORTED_MODULE_2__redes_sociais__["a" /* RedesSociaisPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__programa_de_pontos__["a" /* ProgramaDePontosPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__redes_sociais__["a" /* RedesSociaisPage */]),
             ],
         })
-    ], ProgramaDePontosPageModule);
-    return ProgramaDePontosPageModule;
+    ], RedesSociaisPageModule);
+    return RedesSociaisPageModule;
 }());
 
-//# sourceMappingURL=programa-de-pontos.module.js.map
+//# sourceMappingURL=redes-sociais.module.js.map
 
 /***/ })
 

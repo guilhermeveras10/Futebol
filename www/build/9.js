@@ -1,14 +1,14 @@
 webpackJsonp([9],{
 
-/***/ 519:
+/***/ 521:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExtratoDaArrecadacaoPageModule", function() { return ExtratoDaArrecadacaoPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HistoriaDoClubePageModule", function() { return HistoriaDoClubePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__extrato_da_arrecadacao__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__historia_do_clube__ = __webpack_require__(136);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ExtratoDaArrecadacaoPageModule = (function () {
-    function ExtratoDaArrecadacaoPageModule() {
+var HistoriaDoClubePageModule = (function () {
+    function HistoriaDoClubePageModule() {
     }
-    ExtratoDaArrecadacaoPageModule = __decorate([
+    HistoriaDoClubePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__extrato_da_arrecadacao__["a" /* ExtratoDaArrecadacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_2__historia_do_clube__["a" /* HistoriaDoClubePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__extrato_da_arrecadacao__["a" /* ExtratoDaArrecadacaoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__historia_do_clube__["a" /* HistoriaDoClubePage */]),
             ],
         })
-    ], ExtratoDaArrecadacaoPageModule);
-    return ExtratoDaArrecadacaoPageModule;
+    ], HistoriaDoClubePageModule);
+    return HistoriaDoClubePageModule;
 }());
 
-//# sourceMappingURL=extrato-da-arrecadacao.module.js.map
+//# sourceMappingURL=historia-do-clube.module.js.map
 
 /***/ })
 

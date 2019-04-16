@@ -28,7 +28,6 @@ import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
 import { DetalheNoticiaPage } from '../pages/detalhe-noticia/detalhe-noticia';
 import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
-import { DetalheProdutoPage } from '../pages/detalhe-produto/detalhe-produto';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -89,8 +88,6 @@ export const firebaseConfig = {
     ExtratoDaArrecadacaoPage,
     ProgramaDePontosPage,
     CronogramaDeSorteiosPage,
-    // ExtratoDePontosPage,
-    // DetalheProdutoPage,
     CadastroPage
   ],
   imports: [
@@ -137,7 +134,6 @@ export const firebaseConfig = {
     CadastroPage,
     LoginPage,
     DetalheNoticiaPage,
-    // DetalheNoticiaPage,
     ConfiguracoesPage
   ],
   providers: [

@@ -24,6 +24,9 @@ export class CompraDeIngressosPage {
       this.jogos = snapshot.reverse();
     });
   }
+  detalhe(jogo: any) {
+    this.navCtrl.push('DetalheCompraDeIngressosPage', { jogo: jogo });
+  }
 }
 
 

@@ -1,14 +1,14 @@
 webpackJsonp([6],{
 
-/***/ 522:
+/***/ 524:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MinhaEscalacaoPageModule", function() { return MinhaEscalacaoPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoticiasPageModule", function() { return NoticiasPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__minha_escalacao__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__noticias__ = __webpack_require__(66);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MinhaEscalacaoPageModule = (function () {
-    function MinhaEscalacaoPageModule() {
+var NoticiasPageModule = (function () {
+    function NoticiasPageModule() {
     }
-    MinhaEscalacaoPageModule = __decorate([
+    NoticiasPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__minha_escalacao__["a" /* MinhaEscalacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_2__noticias__["a" /* NoticiasPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__minha_escalacao__["a" /* MinhaEscalacaoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__noticias__["a" /* NoticiasPage */]),
             ],
         })
-    ], MinhaEscalacaoPageModule);
-    return MinhaEscalacaoPageModule;
+    ], NoticiasPageModule);
+    return NoticiasPageModule;
 }());
 
-//# sourceMappingURL=minha-escalacao.module.js.map
+//# sourceMappingURL=noticias.module.js.map
 
 /***/ })
 

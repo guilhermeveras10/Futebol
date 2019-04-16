@@ -30669,6 +30669,176 @@ page-configuracoes .button {
   color: white;
 }
 
+page-detalhe-compra-de-ingressos .data {
+  position: absolute;
+  font-size: 0.7em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+  top: 13%;
+}
+
+page-detalhe-compra-de-ingressos .button {
+  position: absolute;
+  left: 38%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 75%;
+}
+
+page-detalhe-compra-de-ingressos .nomeDoMeuTime {
+  position: absolute;
+  left: 20%;
+  top: 21%;
+  font-size: 0.8em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-detalhe-compra-de-ingressos .meuescudo {
+  position: absolute;
+  left: 36%;
+  top: 20%;
+}
+
+page-detalhe-compra-de-ingressos .minhaQuantidadeDeGols {
+  position: absolute;
+  left: 45%;
+  top: 21%;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: black;
+  background-color: #ebebeb;
+}
+
+page-detalhe-compra-de-ingressos .nomeDoCampeonato {
+  position: relative;
+  left: 12%;
+  top: 6%;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: black;
+}
+
+page-detalhe-compra-de-ingressos .escudoOponente {
+  position: absolute;
+  left: 58%;
+  top: 20%;
+}
+
+page-detalhe-compra-de-ingressos .campeonato {
+  position: absolute;
+  left: 3%;
+  top: 5%;
+}
+
+page-detalhe-compra-de-ingressos .nomeDoOponente {
+  position: absolute;
+  left: 66%;
+  top: 21%;
+  font-size: 0.8em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-detalhe-compra-de-ingressos .check1 {
+  position: absolute;
+  left: 10%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 36%;
+}
+
+page-detalhe-compra-de-ingressos .label1 {
+  position: absolute;
+  left: 16%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 34%;
+}
+
+page-detalhe-compra-de-ingressos .check2 {
+  position: absolute;
+  left: 10%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 41%;
+}
+
+page-detalhe-compra-de-ingressos .label2 {
+  position: absolute;
+  left: 16%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 39%;
+}
+
+page-detalhe-compra-de-ingressos .check3 {
+  position: absolute;
+  left: 10%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 46%;
+}
+
+page-detalhe-compra-de-ingressos .label3 {
+  position: absolute;
+  left: 16%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 44%;
+}
+
+page-detalhe-compra-de-ingressos .check4 {
+  position: absolute;
+  left: 10%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 51%;
+}
+
+page-detalhe-compra-de-ingressos .label4 {
+  position: absolute;
+  left: 16%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 49%;
+}
+
+page-detalhe-compra-de-ingressos .check5 {
+  position: absolute;
+  left: 10%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 56%;
+}
+
+page-detalhe-compra-de-ingressos .label5 {
+  position: absolute;
+  left: 16%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 54%;
+}
+
+page-detalhe-compra-de-ingressos .check6 {
+  position: absolute;
+  left: 10%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 61%;
+}
+
+page-detalhe-compra-de-ingressos .label6 {
+  position: absolute;
+  left: 16%;
+  font-size: 0.9em;
+  font-weight: bold;
+  top: 59%;
+}
+
 page-detalhe-noticia .barra {
   position: absolute;
   top: 63.5%;

@@ -18,4 +18,33 @@ export class JogodProvider {
   getJogo() {
     return this.db.list('jogos');
   }
+  setIngressoCamprado(jogo, torcedor) {
+    return this.db.list('ingressosComprados/').push({
+      torcedor_nome: torcedor.nome,
+      torcedor_cpf: torcedor.cpf,
+      torcedor_uid: torcedor.uid,
+      nome: jogo.nomeDoOponente,
+      timestamp: Date.now(),
+      status: "PENDENTE"
+    });
+  }
+  setJogoArrecadacaoExtrato(jogo, valorPontos, valorIngresso) {
+    let user = this.authService.getUserData();
+    return this.db.list('extratoArrecadacao/' + user.uid).push({
+      nome: jogo.nomeDoOponente,
+      url: jogo.escudooponente,
+      pontos: valorPontos,
+      valorTotal: valorIngresso,
+      timestamp: Date.now()
+    });
+  }
+  setIngressoPontosExtrato(jogo, valorPontos) {
+    let user = this.authService.getUserData();
+    return this.db.list('extratoPontos/' + user.uid).push({
+      nome: jogo.nomeDoOponente,
+      url: jogo.escudooponente,
+      pontos: valorPontos,
+      timestamp: Date.now()
+    });
+  }
 }
