@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.codesundar.iontaxidriver" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Driver</name>
-    <description>Driver App</description>
-    <author email="me@codesundar.com" href="http://codesundar.com/">Codesundar.com</author>
+<widget id="com.opencode.ionjecapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>JEC</name>
+    <description>JEC App</description>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
@@ -97,7 +96,9 @@
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value=" " />
     </plugin>
     <preference name="SplashScreenDelay" value="3000" />
-    <engine name="ios" spec="4.5.4" />
     <plugin name="cordova-plugin-streaming-media" spec="^2.2.0" />
     <plugin name="com.paypal.cordova.mobilesdk" spec="^3.5.0" />
+    <allow-navigation href="http://192.168.15.25:8100" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="7.0.0" />
 </widget>

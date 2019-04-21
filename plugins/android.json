@@ -1,0 +1,50 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "cordova-plugin-accountkit": {
+      "APP_ID": "767580770058358",
+      "APP_NAME": "CodeSundar Labs",
+      "CLIENT_TOKEN": "6d97e93101b1681dfcb868539f6161ea",
+      "API_VERSION": "v1.1",
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "cordova-plugin-streaming-media": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    },
+    "com.paypal.cordova.mobilesdk": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    }
+  },
+  "dependent_plugins": {
+    "card.io.cordova.mobilesdk": {
+      "PACKAGE_NAME": "com.opencode.ionjecapp"
+    }
+  }
+}

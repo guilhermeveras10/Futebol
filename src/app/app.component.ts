@@ -17,7 +17,7 @@ import { RedesSociaisPage } from '../pages/redes-sociais/redes-sociais';
 import { LojaVirtualPage } from '../pages/loja-virtual/loja-virtual';
 import { CompraDeIngressosPage } from '../pages/compra-de-ingressos/compra-de-ingressos';
 import { SejaSocioPage } from '../pages/seja-socio/seja-socio';
-import { AjudeOClubePage } from '../pages/ajude-o-clube/ajude-o-clube';
+import { JecCapPage } from '../pages/jec-cap/jec-cap';
 import { ExtratoDaArrecadacaoPage } from '../pages/extrato-da-arrecadacao/extrato-da-arrecadacao';
 import { ProgramaDePontosPage } from '../pages/programa-de-pontos/programa-de-pontos';
 import { CronogramaDeSorteiosPage } from '../pages/cronograma-de-sorteios/cronograma-de-sorteios';
@@ -50,7 +50,7 @@ export class MyApp {
       // check for login stage, then redirect
       afAuth.authState.take(1).subscribe(authData => {
         if (authData) {
-          this.nav.setRoot(NoticiasPage);
+          this.nav.setRoot(HistoriaDoClubePage);
         } else {
           this.nav.setRoot(LoginPage);
         }
@@ -92,7 +92,7 @@ export class MyApp {
     ];
 
     this.pagesTorcedor = [
-      { title: 'JEC Cap', component: AjudeOClubePage },
+      { title: 'JEC Cap', component: JecCapPage },
       { title: 'Extrato de arrecadação', component: ExtratoDaArrecadacaoPage },
       { title: 'Sorteios', component: CronogramaDeSorteiosPage },
       { title: 'Programa de Pontos', component: ProgramaDePontosPage }

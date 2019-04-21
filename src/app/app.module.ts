@@ -20,7 +20,7 @@ import { RedesSociaisPage } from '../pages/redes-sociais/redes-sociais';
 import { LojaVirtualPage } from '../pages/loja-virtual/loja-virtual';
 import { CompraDeIngressosPage } from '../pages/compra-de-ingressos/compra-de-ingressos';
 import { SejaSocioPage } from '../pages/seja-socio/seja-socio';
-import { AjudeOClubePage } from '../pages/ajude-o-clube/ajude-o-clube';
+import { JecCapPage } from '../pages/jec-cap/jec-cap';
 import { ExtratoDaArrecadacaoPage } from '../pages/extrato-da-arrecadacao/extrato-da-arrecadacao';
 import { ProgramaDePontosPage } from '../pages/programa-de-pontos/programa-de-pontos';
 import { CronogramaDeSorteiosPage } from '../pages/cronograma-de-sorteios/cronograma-de-sorteios';
@@ -84,7 +84,7 @@ export const firebaseConfig = {
     RedesSociaisPage,
     CompraDeIngressosPage,
     SejaSocioPage,
-    AjudeOClubePage,
+    JecCapPage,
     ExtratoDaArrecadacaoPage,
     ProgramaDePontosPage,
     CronogramaDeSorteiosPage,
@@ -127,7 +127,7 @@ export const firebaseConfig = {
     LojaVirtualPage,
     CompraDeIngressosPage,
     SejaSocioPage,
-    AjudeOClubePage,
+    JecCapPage,
     ExtratoDaArrecadacaoPage,
     ProgramaDePontosPage,
     CronogramaDeSorteiosPage,
