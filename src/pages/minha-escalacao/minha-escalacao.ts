@@ -15,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MinhaEscalacaoPage {
 
+  jogadores: any = {};
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

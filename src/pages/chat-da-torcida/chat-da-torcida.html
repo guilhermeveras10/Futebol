@@ -10,3 +10,12 @@
 <ion-content padding>
   
 </ion-content>
+<ion-footer ion-fixed>
+    <ion-toolbar class="no-border" color="white">
+      <ion-input [(ngModel)]="newmessage" placeholder="Escreva sua mensagem ..."></ion-input>
+      <ion-buttons end>
+        <button ion-button (click)="addmessage()">
+          <ion-icon name="send" color="vermelhoEscuro"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>

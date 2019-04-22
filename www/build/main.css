@@ -30571,7 +30571,12 @@ page-cadastro .button {
 }
 
 page-chat-da-torcida ion-content {
-  background-image: url("../../assets/imgs/fundo.png");
+  background-image: url("../assets/imgs/fundo.png");
+}
+
+page-chat-da-torcida ion-input {
+  background-color: transparent;
+  border-radius: 20px 20px 20px 20px;
 }
 
 page-compra-de-ingressos ion-card {
@@ -30994,10 +30999,10 @@ page-detalhe-produto .obs {
 
 page-detalhe-produto .frete {
   position: absolute;
-  left: 30%;
+  left: 31%;
   font-size: 0.9em;
   font-weight: bold;
-  top: 55%;
+  top: 56%;
 }
 
 page-detalhe-produto .residencial {
@@ -31106,8 +31111,8 @@ page-enquetes .titulo {
 
 page-enquetes .opcao1Img {
   position: absolute;
-  left: 2%;
-  top: 17%;
+  left: 5%;
+  top: 20%;
 }
 
 page-enquetes .opcao1 {
@@ -31121,8 +31126,8 @@ page-enquetes .opcao1 {
 
 page-enquetes .opcao2Img {
   position: absolute;
-  left: 2%;
-  top: 36%;
+  left: 5%;
+  top: 39%;
 }
 
 page-enquetes .opcao2 {
@@ -31136,8 +31141,8 @@ page-enquetes .opcao2 {
 
 page-enquetes .opcao3Img {
   position: absolute;
-  left: 2%;
-  top: 55%;
+  left: 5%;
+  top: 58%;
 }
 
 page-enquetes .opcao3 {
@@ -31151,8 +31156,8 @@ page-enquetes .opcao3 {
 
 page-enquetes .opcao4Img {
   position: absolute;
-  left: 2%;
-  top: 74%;
+  left: 5%;
+  top: 77%;
 }
 
 page-enquetes .opcao4 {
@@ -31417,6 +31422,39 @@ page-loja-virtual ion-card {
   margin-top: 0 !important;
   width: 100% !important;
   height: 190px;
+}
+
+page-minha-escalacao .esquema {
+  position: absolute;
+  top: 2%;
+  text-align: center;
+  font-size: 1.0em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-minha-escalacao .select {
+  position: absolute;
+  top: 8%;
+  left: 28%;
+  text-align: center;
+  background-color: #A50000;
+  font-size: 1.0em;
+  width: 80%;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+}
+
+page-minha-escalacao .minha {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  font-size: 1.0em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
 }
 
 page-noticias .fixline {

@@ -1,3 +1,32 @@
 page-minha-escalacao {
-
+    .esquema {
+        position: absolute;
+        top: 2%;
+        text-align: center;
+        font-size: 1.0em;
+        width: 100%;
+        font-weight: bold;
+        color: black;
+    }
+    .select {
+        position: absolute;
+        top: 8%;
+        left: 28%;
+        text-align: center;
+        background-color: #A50000;
+        font-size: 1.0em;
+        width: 80%;
+        font-weight: bold;
+        color: white;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .minha {
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        font-size: 1.0em;
+        width: 100%;
+        font-weight: bold;
+        color: black;
+    }
 }
