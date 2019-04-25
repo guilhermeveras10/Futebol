@@ -1,11 +1,12 @@
 page-noticias {
     .fixline {
+     position: relative;
      height: 60px;
-     margin-bottom: 7px;
-     top: 70%;
-     left: 4%;
-     font-size: 1.0em;
-     width: 100%;
+     margin-bottom: 20px;
+     width: 90%;
+     top: 600%;
+     left: 05%;
+     font-size: 0.9em;
      font-weight: bold;
      color: rgb(77, 77, 77);
     }
@@ -52,7 +53,7 @@ page-noticias {
       font-weight: bold;
       position: absolute;
       top: 90%;
-      right: -50%;
+      right: -52%;
       width: 100%;
       color: rgb(83, 83, 83);
     } 

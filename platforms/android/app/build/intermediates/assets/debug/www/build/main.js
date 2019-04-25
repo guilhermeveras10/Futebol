@@ -226,7 +226,7 @@ var EnquetesPage = (function () {
     }
     EnquetesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-enquetes',template:/*ion-inline-start:"/home/guilherme/workspace/Futebol/src/pages/enquetes/enquetes.html"*/'<ion-header>\n  <ion-navbar color="vermelhoEscuro">\n    <button ion-button menuToggle right>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Enquetes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-grid>\n        <ion-row>\n          <ion-card *ngFor="let enquete of enquetes">\n              <div class="titulo">{{enquete.titulo}}</div>\n              <img class="opcao1Img" src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">\n              <div class="opcao1">{{enquete.opcao1}}</div>\n              <img class="opcao2Img" src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">\n              <div class="opcao2">{{enquete.opcao2}}</div>\n              <img class="opcao3Img" src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">\n              <div class="opcao3">{{enquete.opcao3}}</div>\n              <img class="opcao4Img" src="../../assets/imgs/circulo.png" style="width:30px;height:30px;">\n              <div class="opcao4">{{enquete.opcao4}}</div>\n            </ion-card>\n        </ion-row>\n      </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/guilherme/workspace/Futebol/src/pages/enquetes/enquetes.html"*/,
+            selector: 'page-enquetes',template:/*ion-inline-start:"/home/guilherme/workspace/Futebol/src/pages/enquetes/enquetes.html"*/'<ion-header>\n  <ion-navbar color="vermelhoEscuro">\n    <button ion-button menuToggle right>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Enquetes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-grid>\n        <ion-row>\n          <ion-card *ngFor="let enquete of enquetes">\n              <div class="titulo">{{enquete.titulo}}</div>\n              <ion-checkbox class="opcao1Img" style="width:30px;height:30px;"></ion-checkbox>\n              <div class="opcao1">{{enquete.opcao1}}</div>\n              <ion-checkbox class="opcao2Img" style="width:30px;height:30px;"></ion-checkbox>\n              <div class="opcao2">{{enquete.opcao2}}</div>\n              <ion-checkbox class="opcao3Img" style="width:30px;height:30px;"></ion-checkbox>\n              <div class="opcao3">{{enquete.opcao3}}</div>\n              <ion-checkbox class="opcao4Img" style="width:30px;height:30px;"></ion-checkbox>\n              <div class="opcao4">{{enquete.opcao4}}</div>\n            </ion-card>\n        </ion-row>\n      </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/guilherme/workspace/Futebol/src/pages/enquetes/enquetes.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__providers_enquete_enquete__["a" /* EnqueteProvider */]])
     ], EnquetesPage);
@@ -390,7 +390,7 @@ var ChatDaTorcidaPage = (function () {
     };
     ChatDaTorcidaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-chat-da-torcida',template:/*ion-inline-start:"/home/guilherme/workspace/Futebol/src/pages/chat-da-torcida/chat-da-torcida.html"*/'<ion-header>\n  <ion-navbar color="vermelhoEscuro">\n    <button ion-button menuToggle right>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Chat</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n</ion-content>\n'/*ion-inline-end:"/home/guilherme/workspace/Futebol/src/pages/chat-da-torcida/chat-da-torcida.html"*/,
+            selector: 'page-chat-da-torcida',template:/*ion-inline-start:"/home/guilherme/workspace/Futebol/src/pages/chat-da-torcida/chat-da-torcida.html"*/'<ion-header>\n  <ion-navbar color="vermelhoEscuro">\n    <button ion-button menuToggle right>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Chat</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n</ion-content>\n<ion-footer ion-fixed>\n    <ion-toolbar class="no-border" color="white">\n      <ion-input [(ngModel)]="newmessage" placeholder="Escreva sua mensagem ..."></ion-input>\n      <ion-buttons end>\n        <button ion-button (click)="addmessage()">\n          <ion-icon name="send" color="vermelhoEscuro"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-toolbar>'/*ion-inline-end:"/home/guilherme/workspace/Futebol/src/pages/chat-da-torcida/chat-da-torcida.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"]])
     ], ChatDaTorcidaPage);
@@ -835,13 +835,14 @@ var MinhaEscalacaoPage = (function () {
     function MinhaEscalacaoPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.jogadores = {};
     }
     MinhaEscalacaoPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad MinhaEscalacaoPage');
     };
     MinhaEscalacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-minha-escalacao',template:/*ion-inline-start:"/home/guilherme/workspace/Futebol/src/pages/minha-escalacao/minha-escalacao.html"*/'<ion-header>\n  <ion-navbar color="vermelhoEscuro">\n    <button ion-button menuToggle right>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Minha escalação</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n</ion-content>\n'/*ion-inline-end:"/home/guilherme/workspace/Futebol/src/pages/minha-escalacao/minha-escalacao.html"*/,
+            selector: 'page-minha-escalacao',template:/*ion-inline-start:"/home/guilherme/workspace/Futebol/src/pages/minha-escalacao/minha-escalacao.html"*/'<ion-header>\n  <ion-navbar color="vermelhoEscuro">\n    <button ion-button menuToggle right>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Minha escalação</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n<div class="esquema">Esquema tático</div>\n<ion-select [(ngModel)]="jogadores.esquema" class="select">\n    <ion-option>4-3-3</ion-option>\n  </ion-select>\n<div class="minha">Minha escalação</div>\n</ion-content>\n'/*ion-inline-end:"/home/guilherme/workspace/Futebol/src/pages/minha-escalacao/minha-escalacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"]])
     ], MinhaEscalacaoPage);
@@ -2433,7 +2434,7 @@ var MyApp = (function () {
             // check for login stage, then redirect
             afAuth.authState.take(1).subscribe(function (authData) {
                 if (authData) {
-                    _this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_11__pages_historia_do_clube_historia_do_clube__["a" /* HistoriaDoClubePage */]);
+                    _this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_10__pages_minha_escalacao_minha_escalacao__["a" /* MinhaEscalacaoPage */]);
                 }
                 else {
                     _this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_23__pages_login_login__["a" /* LoginPage */]);

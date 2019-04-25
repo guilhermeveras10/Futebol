@@ -13,14 +13,14 @@
         <ion-card *ngIf="noticia.destaque == 'Sim'">
           <img src="{{noticia.url}}" style="height:200px;" />
           <div class="card-title">{{noticia.nome}}</div>
-          <div class="card-subtitle">{{ noticia.timestamp | date: 'dd.MM.yyyy'}}</div>
+          <div class="card-subtitle" >{{ noticia.timestamp | date: 'MMMM  dd'}}</div>
         </ion-card>
       </ion-col>
       <ion-col *ngFor="let noticia of noticias" col-5 (click)="detalhe(noticia)">
         <ion-card *ngIf="noticia.destaque == 'Não'" class="col6">
             <img src="{{noticia.url}}" style="height:70px;" />
           <div class="fixline">{{noticia.nome}}</div>
-          <div class="fixline2">{{ noticia.timestamp | date: 'dd.MM.yyyy'}}</div>
+          <div class="fixline2">{{ noticia.timestamp | date: 'MMMM  dd'}}</div>
         </ion-card>
       </ion-col>
     </ion-row>
