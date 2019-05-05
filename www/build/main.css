@@ -31228,9 +31228,9 @@ page-estatisticas .col6 {
 
 page-extrato-da-arrecadacao .nome {
   position: absolute;
-  top: 10%;
-  left: 18%;
-  font-size: 0.9em;
+  top: 14%;
+  left: 5%;
+  font-size: 1.0em;
   width: 100%;
   font-weight: bold;
   color: #4d4d4d;
@@ -31243,24 +31243,51 @@ page-extrato-da-arrecadacao .pontos {
   font-size: 0.9em;
   width: 100%;
   font-weight: bold;
-  color: #4d4d4d;
+  color: red;
 }
 
 page-extrato-da-arrecadacao ion-card {
   position: relative;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  margin-top: 0 !important;
   width: 100% !important;
+  height: 70px;
 }
 
-page-extrato-da-arrecadacao ion-card img {
-  width: 50px;
-  height: 50px;
+page-extrato-da-arrecadacao ion-grid {
+  position: absolute;
+  top: 30%;
 }
 
 page-extrato-da-arrecadacao .col6 {
   background-color: transparent;
+}
+
+page-extrato-da-arrecadacao .data {
+  position: absolute;
+  top: 58%;
+  left: 5%;
+  font-size: 1.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+page-extrato-da-arrecadacao .balance {
+  position: absolute;
+  top: 08%;
+  left: 32%;
+  font-size: 2.0em;
+  font-weight: bold;
+  color: white;
+}
+
+page-extrato-da-arrecadacao .foto {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 30%;
+  width: 100%;
 }
 
 page-extrato-de-pontos .nome {
@@ -31304,6 +31331,16 @@ page-historia-do-clube img {
   position: absolute;
   width: 44%;
   height: 30%;
+}
+
+page-jec-cap .img {
+  width: 100%;
+  height: 30%;
+}
+
+page-jec-cap .img2 {
+  width: 100%;
+  height: 20%;
 }
 
 page-jogos ion-card {
@@ -31618,6 +31655,16 @@ page-redes-sociais .twintter {
   font-size: 1.5em;
   font-weight: bold;
   color: #ebebeb;
+}
+
+page-seja-socio .img {
+  width: 100%;
+  height: 30%;
+}
+
+page-seja-socio .img2 {
+  width: 100%;
+  height: 20%;
 }
 
 page-tabelas .artilheiros {

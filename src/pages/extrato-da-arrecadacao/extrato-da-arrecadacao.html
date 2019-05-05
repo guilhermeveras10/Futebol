@@ -7,14 +7,18 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+    <div>
+        <img src="assets/imgs/fundo.png" style="position: absolute;;height: 30%;width: 100%;" />
+        <h3 class="balance">- 338.03 R$</h3>
+  </div>
   <ion-grid>
     <ion-row *ngFor="let produto of produtos">
-        <ion-card class="col6">
-          <img src="{{produto.url}}" />
-          <div class="nome">{{produto.nome}}</div>
-          <div class="pontos">R$ {{produto.valorTotal}}</div>
-        </ion-card>
+      <ion-card class="col6">
+        <div class="nome">DÉBITO {{produto.nome}}</div>
+        <div class="pontos">R$ -{{produto.valorTotal}}</div>
+        <div class="data">{{produto.timestamp | date: 'dd/MM/yyyy  hh:mm'}}</div>
+      </ion-card>
     </ion-row>
   </ion-grid>
 </ion-content>

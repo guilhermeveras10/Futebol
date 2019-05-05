@@ -1,9 +1,9 @@
 page-extrato-da-arrecadacao {
-    .nome {
+        .nome {
         position: absolute;
-        top: 10%;
-        left: 18%;
-        font-size: 0.9em;
+        top: 14%;
+        left: 5%;
+        font-size: 1.0em;
         width: 100%;
         font-weight: bold;
         color: rgb(77, 77, 77);
@@ -16,23 +16,50 @@ page-extrato-da-arrecadacao {
         font-size: 0.9em;
         width: 100%;
         font-weight: bold; 
-        color: rgb(77, 77, 77);
+        color: red;
        }
    
        ion-card {
          position: relative;
          margin-left:0 !important;
          margin-right:0 !important;
-         margin-top:0 !important;
          width:100% !important;
-           img{
-               width: 50px;
-               height: 50px;
-           }
+         height: 70px;
+       }
+
+       ion-grid {
+        position: absolute;
+        top: 30%;
        }
    
        .col6 {
          background-color: transparent;
        }
- 
+
+       .data {
+        position: absolute;
+        top: 58%;
+        left: 5%;
+        font-size: 1.0em;
+        width: 100%;
+        font-weight: bold;
+        color: rgb(77, 77, 77);
+       }
+       
+       .balance {
+        position: absolute;
+        top: 08%;
+        left: 32%;
+        font-size: 2.0em; 
+        font-weight: bold;
+        color: white;
+       }
+
+       .foto {
+        position: absolute; 
+        left: 0%;
+        top:0%;
+        height: 30%;
+        width: 100%;
+       }
 }

@@ -50,7 +50,7 @@ export class MyApp {
       // check for login stage, then redirect
       afAuth.authState.take(1).subscribe(authData => {
         if (authData) {
-          this.nav.setRoot(MinhaEscalacaoPage);
+          this.nav.setRoot(ExtratoDaArrecadacaoPage);
         } else {
           this.nav.setRoot(LoginPage);
         }
