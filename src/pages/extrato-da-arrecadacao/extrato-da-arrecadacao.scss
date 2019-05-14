@@ -11,12 +11,12 @@ page-extrato-da-arrecadacao {
 
        .pontos {
         position: absolute;
-        top: 18%;
-        left: 80%;
-        font-size: 0.9em;
+        top: 50%;
+        left: 76%;
+        font-size: 1.1em;
         width: 100%;
         font-weight: bold; 
-        color: red;
+        color: black;
        }
    
        ion-card {
@@ -38,21 +38,49 @@ page-extrato-da-arrecadacao {
 
        .data {
         position: absolute;
-        top: 58%;
+        top: 50%;
         left: 5%;
         font-size: 1.0em;
         width: 100%;
         font-weight: bold;
-        color: rgb(77, 77, 77);
+        color: black;
        }
        
        .balance {
         position: absolute;
-        top: 08%;
+        top: 10%;
         left: 32%;
         font-size: 2.0em; 
         font-weight: bold;
         color: white;
+       }
+
+       .total {
+        position: absolute;
+        left: 28%; 
+        color: white;
+       }
+       .jecCap {
+        position: absolute;
+        left: 39%; 
+        top: 8%;
+        color: red;
+       }
+
+       .venha {
+        position: absolute;
+        left: 3%; 
+        top: 25%;
+        font-size: 1.1em;
+        color: white;
+       }
+       .arrecadado {
+        position: absolute;
+        left: 30%; 
+        top: 31%;
+        font-size: 1.4em;
+        font-weight: bolder;
+        color: black;
        }
 
        .foto {

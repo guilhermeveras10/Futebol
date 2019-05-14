@@ -10,14 +10,22 @@
 <ion-content>
     <div>
         <img src="assets/imgs/fundo.png" style="position: absolute;;height: 30%;width: 100%;" />
-        <h3 class="balance">- 338.03 R$</h3>
+        <h3 class="balance">R$ 200.00</h3>
+        <h1 class="total">Total arrecadado</h1>
+        <h2 class="jecCap">JEC Cap</h2>
+        <div class="venha">Faça parte desse time ajude o JEC a se tornar mais forte</div>
   </div>
+
+  <div class="arrecadado">Arrecadação mensal</div>
   <ion-grid>
-    <ion-row *ngFor="let produto of produtos">
+    <ion-row>
       <ion-card class="col6">
-        <div class="nome">DÉBITO {{produto.nome}}</div>
-        <div class="pontos">R$ -{{produto.valorTotal}}</div>
-        <div class="data">{{produto.timestamp | date: 'dd/MM/yyyy  hh:mm'}}</div>
+        <div class="pontos">R$100.00</div>
+        <div class="data">Maio/2019</div>
+      </ion-card>
+      <ion-card class="col6">
+        <div class="pontos">R$100.00</div>
+        <div class="data">Abril/2019</div>
       </ion-card>
     </ion-row>
   </ion-grid>

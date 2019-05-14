@@ -20,7 +20,6 @@ import { SejaSocioPage } from '../pages/seja-socio/seja-socio';
 import { JecCapPage } from '../pages/jec-cap/jec-cap';
 import { ExtratoDaArrecadacaoPage } from '../pages/extrato-da-arrecadacao/extrato-da-arrecadacao';
 import { ProgramaDePontosPage } from '../pages/programa-de-pontos/programa-de-pontos';
-import { CronogramaDeSorteiosPage } from '../pages/cronograma-de-sorteios/cronograma-de-sorteios';
 import { AngularFireAuth } from "angularfire2/auth/auth";
 import { LoginPage } from '../pages/login/login';
 import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
@@ -94,7 +93,6 @@ export class MyApp {
     this.pagesTorcedor = [
       { title: 'JEC Cap', component: JecCapPage },
       { title: 'Extrato de arrecadação', component: ExtratoDaArrecadacaoPage },
-      { title: 'Sorteios', component: CronogramaDeSorteiosPage },
       { title: 'Programa de Pontos', component: ProgramaDePontosPage }
     ];
 

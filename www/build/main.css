@@ -31238,12 +31238,12 @@ page-extrato-da-arrecadacao .nome {
 
 page-extrato-da-arrecadacao .pontos {
   position: absolute;
-  top: 18%;
-  left: 80%;
-  font-size: 0.9em;
+  top: 50%;
+  left: 76%;
+  font-size: 1.1em;
   width: 100%;
   font-weight: bold;
-  color: red;
+  color: black;
 }
 
 page-extrato-da-arrecadacao ion-card {
@@ -31265,21 +31265,51 @@ page-extrato-da-arrecadacao .col6 {
 
 page-extrato-da-arrecadacao .data {
   position: absolute;
-  top: 58%;
+  top: 50%;
   left: 5%;
   font-size: 1.0em;
   width: 100%;
   font-weight: bold;
-  color: #4d4d4d;
+  color: black;
 }
 
 page-extrato-da-arrecadacao .balance {
   position: absolute;
-  top: 08%;
+  top: 10%;
   left: 32%;
   font-size: 2.0em;
   font-weight: bold;
   color: white;
+}
+
+page-extrato-da-arrecadacao .total {
+  position: absolute;
+  left: 28%;
+  color: white;
+}
+
+page-extrato-da-arrecadacao .jecCap {
+  position: absolute;
+  left: 39%;
+  top: 8%;
+  color: red;
+}
+
+page-extrato-da-arrecadacao .venha {
+  position: absolute;
+  left: 3%;
+  top: 25%;
+  font-size: 1.1em;
+  color: white;
+}
+
+page-extrato-da-arrecadacao .arrecadado {
+  position: absolute;
+  left: 30%;
+  top: 31%;
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: black;
 }
 
 page-extrato-da-arrecadacao .foto {
@@ -31292,9 +31322,9 @@ page-extrato-da-arrecadacao .foto {
 
 page-extrato-de-pontos .nome {
   position: absolute;
-  top: 10%;
-  left: 18%;
-  font-size: 0.9em;
+  top: 14%;
+  left: 5%;
+  font-size: 1.0em;
   width: 100%;
   font-weight: bold;
   color: #4d4d4d;
@@ -31302,29 +31332,131 @@ page-extrato-de-pontos .nome {
 
 page-extrato-de-pontos .pontos {
   position: absolute;
-  top: 18%;
-  left: 80%;
-  font-size: 0.9em;
+  top: 50%;
+  left: 76%;
+  font-size: 1.1em;
   width: 100%;
   font-weight: bold;
-  color: #4d4d4d;
+  color: blue;
+}
+
+page-extrato-de-pontos .pontosDebito {
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  font-size: 1.1em;
+  width: 100%;
+  font-weight: bold;
+  color: red;
 }
 
 page-extrato-de-pontos ion-card {
   position: relative;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  margin-top: 0 !important;
   width: 100% !important;
+  height: 70px;
 }
 
-page-extrato-de-pontos ion-card img {
-  width: 50px;
-  height: 50px;
+page-extrato-de-pontos ion-grid {
+  position: absolute;
+  top: 30%;
 }
 
 page-extrato-de-pontos .col6 {
   background-color: transparent;
+}
+
+page-extrato-de-pontos .data {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  font-size: 1.0em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-extrato-de-pontos .cardCredito {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 1.1em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-extrato-de-pontos .cardDebito {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 1.1em;
+  width: 100%;
+  font-weight: bold;
+  color: black;
+}
+
+page-extrato-de-pontos .balance {
+  position: absolute;
+  top: 8%;
+  left: 27%;
+  font-size: 2.0em;
+  font-weight: bold;
+  color: white;
+}
+
+page-extrato-de-pontos .total {
+  position: absolute;
+  left: 39%;
+  top: 3%;
+  font-size: 2.0em;
+  font-weight: bolder;
+  color: white;
+}
+
+page-extrato-de-pontos .totalCreditos {
+  position: absolute;
+  left: 4%;
+  top: 20%;
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: blue;
+}
+
+page-extrato-de-pontos .totalDebitos {
+  position: absolute;
+  right: 4%;
+  top: 20%;
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: red;
+}
+
+page-extrato-de-pontos .creditos {
+  position: absolute;
+  left: 4%;
+  top: 24%;
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: blue;
+}
+
+page-extrato-de-pontos .debitos {
+  position: absolute;
+  right: 4%;
+  top: 24%;
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: red;
+}
+
+page-extrato-de-pontos .foto {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 20%;
+  width: 100%;
 }
 
 page-historia-do-clube img {
@@ -31517,10 +31649,6 @@ page-noticias ion-card {
 
 page-noticias ion-card img {
   width: 100%;
-}
-
-page-noticias .col6 {
-  background-color: #f1f1f1;
 }
 
 page-noticias .card-title {

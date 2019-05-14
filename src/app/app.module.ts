@@ -23,7 +23,6 @@ import { SejaSocioPage } from '../pages/seja-socio/seja-socio';
 import { JecCapPage } from '../pages/jec-cap/jec-cap';
 import { ExtratoDaArrecadacaoPage } from '../pages/extrato-da-arrecadacao/extrato-da-arrecadacao';
 import { ProgramaDePontosPage } from '../pages/programa-de-pontos/programa-de-pontos';
-import { CronogramaDeSorteiosPage } from '../pages/cronograma-de-sorteios/cronograma-de-sorteios';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
 import { DetalheNoticiaPage } from '../pages/detalhe-noticia/detalhe-noticia';
@@ -61,11 +60,12 @@ import { ExtratoDePontosPageModule } from '../pages/extrato-de-pontos/extrato-de
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
-    authDomain: "patrociniopremiado-ddabd.firebaseapp.com",
-    databaseURL: "https://patrociniopremiado-ddabd.firebaseio.com",
-    projectId: "patrociniopremiado-ddabd",
-    storageBucket: "patrociniopremiado-ddabd.appspot.com",
-    messagingSenderId: "144670116619"
+  authDomain: "patrociniopremiado-ddabd.firebaseapp.com",
+  databaseURL: "https://patrociniopremiado-ddabd.firebaseio.com",
+  projectId: "patrociniopremiado-ddabd",
+  storageBucket: "patrociniopremiado-ddabd.appspot.com",
+  messagingSenderId: "144670116619",
+  appId: "1:144670116619:web:c4e56b558bbf5948"
 };
 
 
@@ -87,7 +87,6 @@ export const firebaseConfig = {
     JecCapPage,
     ExtratoDaArrecadacaoPage,
     ProgramaDePontosPage,
-    CronogramaDeSorteiosPage,
     CadastroPage
   ],
   imports: [
@@ -130,7 +129,6 @@ export const firebaseConfig = {
     JecCapPage,
     ExtratoDaArrecadacaoPage,
     ProgramaDePontosPage,
-    CronogramaDeSorteiosPage,
     CadastroPage,
     LoginPage,
     DetalheNoticiaPage,
