@@ -15,17 +15,42 @@
 
 <ion-content>
 
-  <img src="{{produto.url}}" class="img"/>
-  <div class="nome">{{produto.nome}} - R${{item_qty * produto.valor}}</div>
-  <img src="assets/imgs/barra.png" class="barra">
-  <div class="descricao">{{produto.descricao}}</div>
-  <div class="pontos">Você ganha {{item_qty * produto.pontos}}Pts</div>
-  <div class="quantidade">{{item_qty}}</div>
-  <h6 class="h6">Observações</h6>
-  <ion-input class="obs" type="text" [(ngModel)]="obs"></ion-input>
-  <ion-label class="residencial">Frete para residencia: 38</ion-label>
-  <ion-checkbox class="frete" (click)="frete()"></ion-checkbox>
-  <button clear (click)="inc()" class="aumentar"><ion-icon name="add-circle" ></ion-icon></button>
-  <button clear (click)="dec()" class="abaixar"><ion-icon name="remove-circle" ></ion-icon></button>
-  <button class="button" ion-button padding round color="vermelhoEscuro" (click)="comprar()">Comprar</button>
+  <img src="{{produto.url}}" style="position: absolute; top: 0%; left: 25%; width: 60%;" />
+  <img src="{{produto.url}}" style="position: absolute; top: 2%; left: 4%; width: 20%;" />
+  <img src="{{produto.url}}" style="position: absolute; top: 13%; left: 4%; width: 20%;" />
+  <img src="{{produto.url}}" style="position: absolute; top: 24%; left: 4%; width: 20%;" />
+  <div class="nome">{{produto.nome}}</div>
+  <div
+    style="position: absolute; text-align: center; color: black; top: 42.5%; width: 100%; font-weight: bolder; font-size: 1.3em;">
+    R$ {{produto.valor}}</div>
+  <div
+    style="position: absolute; text-align: center; color: blue; top: 47%; width: 100%; font-weight: bolder; font-size: 1.3em;">
+    Você ganha {{produto.pontos}} pts</div>
+  <div
+    style="position: absolute; color: black; top: 52%; left: 6%; width: 89%; height: 30%; font-weight: 100; font-size: 0.8em; font-weight: bolder; background-color: aliceblue; border-radius: 10px 10px 10px 10px; border: 0.5px solid black;">
+    <div
+      style="position: absolute; color: black; top: 5%; left: 3%; width: 89%; height: 30%; font-size: 0.9em; font-weight: bolder;">
+      {{produto.descricao}}</div>
+  </div>
+  <div
+    style="position: absolute; left: 5%; color: black; top: 83%; width: 100%; font-weight: bolder; font-size: 0.8em;">
+    Selecione o tamanho desejado</div>
+  <ion-checkbox style="position: absoltute; top: 86%; left: 4%; width:30px;height:30px;"></ion-checkbox>
+  <div
+    style="position: absolute; left: 11%; color: black; top: 87%; width: 100%; font-weight: bolder; font-size: 0.8em;">P
+  </div>
+  <ion-checkbox style="position: absoltute; top: 86%; left: 7%; width:30px;height:30px;"></ion-checkbox>
+  <div
+    style="position: absolute; left: 23%; color: black; top: 87%; width: 100%; font-weight: bolder; font-size: 0.8em;">M
+  </div>
+  <ion-checkbox style="position: absoltute; top: 86%; left: 10%; width:30px;height:30px;"></ion-checkbox>
+  <div
+    style="position: absolute; left: 35%; color: black; top: 87%; width: 100%; font-weight: bolder; font-size: 0.8em;">G
+  </div>
+  <ion-checkbox style="position: absoltute; top: 86%; left: 13%; width:30px;height:30px;"></ion-checkbox>
+  <div
+    style="position: absolute; left: 47%; color: black; top: 87%; width: 100%; font-weight: bolder; font-size: 0.8em;">
+    GG</div>
+  <button ion-button padding color="vermelhoEscuro"
+    style="position: absolute; top: 90%; left: 33%; border-radius: 10px 10px 10px 10px;">Finalizar compra</button>
 </ion-content>

@@ -57,6 +57,8 @@ import { ProdutosProvider } from '../providers/produtos/produtos';
 import { DetalheProdutoPageModule } from '../pages/detalhe-produto/detalhe-produto.module';
 import { ExtratoDePontosPage } from '../pages/extrato-de-pontos/extrato-de-pontos';
 import { ExtratoDePontosPageModule } from '../pages/extrato-de-pontos/extrato-de-pontos.module';
+import { CarrinhoPage } from '../pages/carrinho/carrinho';
+import { MeusPedidosPage } from '../pages/meus-pedidos/meus-pedidos';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDHeksMw52dDwN9ULGTSjD1567Z8ykEA1c",
@@ -74,6 +76,8 @@ export const firebaseConfig = {
     MyApp,
     NoticiasPage,
     VideosPage,
+    MeusPedidosPage,
+    CarrinhoPage,
     TabelasPage,
     JogosPage,
     EstatisticasPage,
@@ -115,6 +119,7 @@ export const firebaseConfig = {
     ExtratoDePontosPage,
     VideosPage,
     TabelasPage,
+    MeusPedidosPage,
     JogosPage,
     EstatisticasPage,
     ElencoPage,
@@ -122,6 +127,7 @@ export const firebaseConfig = {
     HistoriaDoClubePage,
     ChatDaTorcidaPage,
     EnquetesPage,
+    CarrinhoPage,
     RedesSociaisPage,
     LojaVirtualPage,
     CompraDeIngressosPage,

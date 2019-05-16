@@ -25,6 +25,8 @@ import { LoginPage } from '../pages/login/login';
 import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 
 import { UserProvider } from '../providers/user/user';
+import { CarrinhoPage } from '../pages/carrinho/carrinho';
+import { MeusPedidosPage } from '../pages/meus-pedidos/meus-pedidos';
 
 @Component({
   templateUrl: 'app.html'
@@ -49,7 +51,7 @@ export class MyApp {
       // check for login stage, then redirect
       afAuth.authState.take(1).subscribe(authData => {
         if (authData) {
-          this.nav.setRoot(ExtratoDaArrecadacaoPage);
+          this.nav.setRoot(JecCapPage);
         } else {
           this.nav.setRoot(LoginPage);
         }
@@ -93,6 +95,8 @@ export class MyApp {
     this.pagesTorcedor = [
       { title: 'JEC Cap', component: JecCapPage },
       { title: 'Extrato de arrecadação', component: ExtratoDaArrecadacaoPage },
+      { title: 'Carrinho', component: CarrinhoPage },
+      { title: 'Meus pedidos', component: MeusPedidosPage },
       { title: 'Programa de Pontos', component: ProgramaDePontosPage }
     ];
 

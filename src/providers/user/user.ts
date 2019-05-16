@@ -45,12 +45,12 @@ export class UserProvider {
   // register new account
   register(userInfo) {
     return Observable.create(observer => {
-      this.afAuth.auth.createUserWithEmailAndPassword(userInfo.cpf + "@cpf.com", userInfo.password).then((authData: any) => {
+      this.afAuth.auth.createUserWithEmailAndPassword(userInfo.email, userInfo.password).then((authData: any) => {
         // update driver object
         userInfo.uid = authData.uid;
 
         this.getUserData().updateProfile({ displayName: userInfo.name, photoURL: "../../assets/imgs/logo.png" });
-        this.db.object('torcedores/' + userInfo.uid).update(userInfo);
+        this.db.object('usuarios/' + userInfo.uid).update(userInfo);
 
         observer.next();
       }).catch((error: any) => {
